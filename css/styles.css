@@ -23,17 +23,16 @@ p {
   margin-bottom: 16px;
 }
 
-section {
-  margin-top: 200px;
-}
-
 /* styling for the navigation bar */
 nav {
   width: 100%;
   height: 110px;
   position: fixed;
+  top: 0;
+  /* hard set to position the nav bar at the top no matter what */
   display: flex;
   align-items: center;
+  background-color: #eddfd8;
 }
 nav h1 {
   width: 40%;
@@ -62,9 +61,10 @@ nav .links {
   display: flex;
   background-color: #d1d9eb;
   justify-content: center;
-  margin: auto;
+  margin: 200px auto auto auto;
   border: #b2c3eb solid 5px;
   border-radius: 15px;
+  z-index: 2;
 }
 .bio .left1 {
   width: 50%;
