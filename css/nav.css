@@ -8,15 +8,20 @@ nav {
 }
 nav h1 {
   width: 30%;
+  font-size: 110px;
+  padding: 30px;
+  background-color: blue;
 }
 nav .links {
-  width: 70%;
+  width: 60%;
   line-height: 40px;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bolder;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   /* adds space between links vertically */
-  height: 320px;
+  align-items: center;
+  /* centers the text links */
+  height: 110px;
 }
