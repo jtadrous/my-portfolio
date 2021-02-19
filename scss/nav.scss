@@ -7,12 +7,13 @@ nav {
   display: flex;
   align-items: center;
   background-color: #eddfd8;
+  border-bottom: 5px solid #ebd0c3;
 
   h1 {
     width: 40%;
     height: 100%;
     font-size: 50px;
-    padding: 30px;
+    padding: 35px 30px 30px 70px;
   }
 
   .links {

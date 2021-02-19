@@ -2,30 +2,65 @@
 .bio {
   width: 80%;
   display: flex;
+  flex-direction: column;
   background-color: #d1d9eb;
   justify-content: center;
   margin: 200px auto auto auto;
   border: #b2c3eb solid 5px;
-  border-radius: 15px;
+  border-radius: 20px;
   z-index: 2;
+  font-size: 23px;
 
-  .left1 {
-    width: 50%;
+  .top {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 100px;
-    margin: auto;
+    flex-direction: row;
+    padding: 50px 50px 20px 50px;
+
+    .left1 {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding: 100px;
+      margin: auto;
+    }
+
+    .right1 {
+      width: 50%;
+      text-align: center;
+
+      img {
+        max-width: 60%;
+        height: auto;
+        padding-top: 80px;
+      }
+    }
   }
 
-  .right1 {
-    width: 50%;
-    justify-content: center;
+  hr {
+    border-top: 5px solid #b2c3eb;
+    border-radius: 30px;
+    border-left: none;
+    border-bottom: none;
+    width: 90%;
+    margin: auto auto 50px auto;
+  }
+
+  .details {
+    width: 80%;
     margin: auto;
 
-    img {
-      width: 400px;
-      height: 400px;
+    table {
+      border-spacing: 15px 50px;
+    }
+
+    td {
+      width: 70%;
+    }
+
+    th {
+      width: 30%;
+      text-align: left;
     }
   }
 }
