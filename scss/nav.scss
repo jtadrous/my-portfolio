@@ -1,16 +1,22 @@
 /* styling for the navigation bar */
 nav {
   width: 100%;
-  height: 150px;
+  height: 110px;
   background-color: #eddfd8;
   position: fixed;
+  display: flex;
 
-  #links {
+  h1 {
+    width: 30%;
+  }
+
+  .links {
+    width: 70%;
     line-height: 40px;
-    font-size: 13px;
+    font-size: 20px;
     font-weight: bolder;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly; /* adds space between links vertically */
     //align-items: center; /* centers the text links */
     height: 320px;
