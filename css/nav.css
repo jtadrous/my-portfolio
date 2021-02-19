@@ -1,1 +1,17 @@
 /* styling for the navigation bar */
+nav {
+  width: 100%;
+  height: 150px;
+  background-color: #eddfd8;
+  position: fixed;
+}
+nav #links {
+  line-height: 40px;
+  font-size: 13px;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* adds space between links vertically */
+  height: 320px;
+}
