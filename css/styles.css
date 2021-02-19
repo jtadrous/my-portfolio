@@ -33,6 +33,7 @@ nav {
   height: 110px;
   position: fixed;
   display: flex;
+  align-items: center;
 }
 nav h1 {
   width: 40%;
@@ -58,7 +59,6 @@ nav .links {
 /* styling for the about/bio page */
 .bio {
   width: 80%;
-  height: 100%;
   display: flex;
   background-color: #d1d9eb;
   justify-content: center;
