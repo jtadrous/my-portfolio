@@ -66,7 +66,6 @@ nav .links {
   margin: 165px auto auto auto;
   border: #b2c3eb solid 5px;
   border-radius: 20px;
-  z-index: 2;
   font-size: 23px;
 }
 .bio .top {
@@ -112,4 +111,24 @@ nav .links {
 .bio .details th {
   width: 30%;
   text-align: left;
+}
+
+/* styling for the contact page */
+.contact {
+  width: 80%;
+  display: flex;
+  background-color: #d1d9eb;
+  justify-content: center;
+  margin: 165px auto auto auto;
+  border: #b2c3eb solid 5px;
+  border-radius: 20px;
+  font-size: 23px;
+}
+.contact .left2 {
+  width: 40%;
+  text-align: center;
+}
+.contact .right2 {
+  background-color: white;
+  width: 60%;
 }

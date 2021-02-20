@@ -6,7 +6,7 @@ nav {
   top: 0; /* hard set to position the nav bar at the top no matter what */
   display: flex;
   align-items: center;
-  background-color: #eddfd8;
+  background-color: $background;
   border-bottom: 5px solid #ebd0c3;
 
   h1 {

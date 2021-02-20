@@ -1,0 +1,21 @@
+/* styling for the contact page */
+.contact {
+  width: 80%;
+  display: flex;
+  background-color: $blue;
+  justify-content: center;
+  margin: 165px auto auto auto;
+  border: $blue-border solid 5px;
+  border-radius: 20px;
+  font-size: 23px;
+
+  .left2 {
+    width: 40%;
+    text-align: center;
+  }
+
+  .right2 {
+    background-color: white;
+    width: 60%;
+  }
+}
