@@ -133,7 +133,7 @@ nav .links {
 .contact .right2 {
   background-color: white;
   width: 60%;
-  margin: 50px;
+  margin: 70px;
   justify-content: center;
 }
 .contact .right2 h2 {
@@ -157,8 +157,8 @@ nav .links {
   border: black solid 3px;
 }
 .contact .right2 .button {
-  padding: 0 50px 50px 0;
-  justify-content: right;
+  padding: 0 55px 50px 0;
+  float: right;
 }
 .contact .right2 .button #submit {
   background-color: black;
