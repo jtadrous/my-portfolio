@@ -27,5 +27,19 @@ nav {
     justify-content: space-evenly; /* adds space between links vertically */
     align-items: center; /* centers the text links */
     height: 100%;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  a.current {
+    height: 125px;
+    width: 175px;
+    background-color: $blue;
+    border-bottom: 5px solid $blue-border;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
