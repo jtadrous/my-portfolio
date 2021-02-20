@@ -256,6 +256,7 @@ nav a.current {
 }
 .design .col1 .container {
   position: relative;
+  margin-top: 70px;
 }
 .design .col1 .container img {
   width: 100%;
