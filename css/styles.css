@@ -126,7 +126,9 @@ nav .links {
 }
 .contact .left2 {
   width: 40%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .contact .right2 {
   background-color: white;
@@ -134,11 +136,11 @@ nav .links {
   margin: 50px;
   justify-content: center;
 }
+.contact .right2 h2 {
+  margin: 55px;
+}
 .contact .right2 .inputs {
   text-align: center;
-  padding: 20px;
-}
-.contact .right2 .inputs h2 {
   padding: 20px;
 }
 .contact .right2 .inputs #fname,
@@ -147,8 +149,22 @@ nav .links {
 .contact .right2 .inputs #subject {
   width: 45%;
   padding: 20px;
+  border: black solid 3px;
 }
 .contact .right2 .inputs #message {
-  width: 91%;
+  width: 92%;
   padding: 20px;
+  border: black solid 3px;
+}
+.contact .right2 .button {
+  padding: 0 50px 50px 0;
+  justify-content: right;
+}
+.contact .right2 .button #submit {
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  justify-content: right;
 }
