@@ -1,3 +1,42 @@
 /* styling for the home page */
 .home {
+  width: 100%;
+  margin: 165px auto auto auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  h1 {
+    width: 60%;
+    font-size: 40px;
+    line-height: 2;
+    color: #965f60;
+    margin: auto;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  img {
+    width: 60%;
+    height: auto;
+    margin: auto;
+  }
+
+  .banner {
+    padding: 45px;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+
+    img {
+      width: 300px;
+      height: 275px;
+      image-orientation: center;
+    }
+  }
 }
