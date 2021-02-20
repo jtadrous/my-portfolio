@@ -127,8 +127,19 @@ nav .links {
 .contact .left2 {
   width: 40%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.contact .left2 .icons {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+}
+.contact .left2 .icons img {
+  margin: 10px;
+  width: 60px;
+  height: 60px;
 }
 .contact .right2 {
   background-color: white;
@@ -167,4 +178,5 @@ nav .links {
   padding: 15px 25px;
   border: none;
   justify-content: right;
+  cursor: pointer;
 }
