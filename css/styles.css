@@ -108,6 +108,7 @@ nav a.current {
   flex-direction: row;
   justify-content: space-evenly;
   margin: auto;
+  font-size: 20px;
 }
 .home .banner img {
   width: 300px;
