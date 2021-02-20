@@ -17,5 +17,23 @@
   .right2 {
     background-color: white;
     width: 60%;
+    margin: 50px;
+    //display: flex;
+
+    h2 {
+      padding: 20px;
+    }
+    #fname,
+    #lname,
+    #email,
+    #subject {
+      width: 40%;
+      padding: 20px;
+    }
+
+    #message {
+      width: 95%;
+      padding: 20px;
+    }
   }
 }

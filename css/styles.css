@@ -131,4 +131,19 @@ nav .links {
 .contact .right2 {
   background-color: white;
   width: 60%;
+  margin: 50px;
+}
+.contact .right2 h2 {
+  padding: 20px;
+}
+.contact .right2 #fname,
+.contact .right2 #lname,
+.contact .right2 #email,
+.contact .right2 #subject {
+  width: 40%;
+  padding: 20px;
+}
+.contact .right2 #message {
+  width: 95%;
+  padding: 20px;
 }
