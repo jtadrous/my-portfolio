@@ -132,18 +132,23 @@ nav .links {
   background-color: white;
   width: 60%;
   margin: 50px;
+  justify-content: center;
 }
-.contact .right2 h2 {
+.contact .right2 .inputs {
+  text-align: center;
   padding: 20px;
 }
-.contact .right2 #fname,
-.contact .right2 #lname,
-.contact .right2 #email,
-.contact .right2 #subject {
-  width: 40%;
+.contact .right2 .inputs h2 {
   padding: 20px;
 }
-.contact .right2 #message {
-  width: 95%;
+.contact .right2 .inputs #fname,
+.contact .right2 .inputs #lname,
+.contact .right2 .inputs #email,
+.contact .right2 .inputs #subject {
+  width: 45%;
+  padding: 20px;
+}
+.contact .right2 .inputs #message {
+  width: 91%;
   padding: 20px;
 }
