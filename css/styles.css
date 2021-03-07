@@ -67,7 +67,61 @@ nav a.current {
   justify-content: center;
   align-items: center;
 }
+nav .dropdown {
+  display: none;
+}
 
+@media only screen and (max-width: 980px) {
+  nav h1 {
+    width: 90%;
+    font-size: 30px;
+    text-align: left;
+  }
+  nav .links {
+    display: none;
+    width: 10%;
+  }
+  nav .dropdown {
+    float: right;
+    text-align: right;
+    position: relative;
+    display: inline-block;
+  }
+  nav .dropdown .dropbtn {
+    background-color: #4caf50;
+    color: white;
+    padding: 30px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  nav .dropdown .dropbtn:hover,
+nav .dropdown .dropbtn:focus {
+    background-color: #3e8e41;
+  }
+  nav .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    right: 0;
+    z-index: 1;
+  }
+  nav .dropdown .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  nav .dropdown .dropdown a:hover {
+    background-color: #ddd;
+  }
+  nav .dropdown .show {
+    display: block;
+  }
+}
 /* styling for the home page */
 .home {
   width: 100%;
