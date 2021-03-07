@@ -226,6 +226,24 @@ nav .dropdown {
   width: 30%;
   text-align: left;
 }
+.bio .bottom {
+  width: 80%;
+  margin: auto;
+  padding-top: 50px;
+  height: auto;
+}
+.bio .bottom .level {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 30px;
+}
+.bio .bottom .level h4 {
+  width: 30%;
+}
+.bio .bottom .level p {
+  width: 70%;
+  text-align: left;
+}
 
 @media only screen and (max-width: 980px) {
   .bio {
@@ -240,6 +258,22 @@ nav .dropdown {
     width: 100%;
   }
   .bio .top .right1 {
+    width: 100%;
+  }
+  .bio .top .right1 img {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .bio .bottom {
+    padding-top: 15px;
+  }
+  .bio .bottom .level {
+    flex-direction: column;
+  }
+  .bio .bottom .level h4 {
+    width: 100%;
+  }
+  .bio .bottom .level p {
     width: 100%;
   }
 }
