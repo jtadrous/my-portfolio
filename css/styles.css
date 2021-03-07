@@ -75,29 +75,32 @@ nav .dropdown {
   nav h1 {
     width: 90%;
     font-size: 30px;
-    text-align: left;
+    padding: 30px;
   }
   nav .links {
     display: none;
     width: 10%;
+  }
+  nav a.current {
+    height: 50px;
   }
   nav .dropdown {
     float: right;
     text-align: right;
     position: relative;
     display: inline-block;
+    border-top: 5px solid #b2c3eb;
+    border-bottom: 5px solid #b2c3eb;
+    border-left: 5px solid #b2c3eb;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
   }
   nav .dropdown .dropbtn {
-    background-color: #4caf50;
-    color: white;
+    background-color: #d1d9eb;
     padding: 30px;
     font-size: 16px;
     border: none;
     cursor: pointer;
-  }
-  nav .dropdown .dropbtn:hover,
-nav .dropdown .dropbtn:focus {
-    background-color: #3e8e41;
   }
   nav .dropdown .dropdown-content {
     display: none;
@@ -114,9 +117,6 @@ nav .dropdown .dropbtn:focus {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
-  nav .dropdown .dropdown a:hover {
-    background-color: #ddd;
   }
   nav .dropdown .show {
     display: block;
