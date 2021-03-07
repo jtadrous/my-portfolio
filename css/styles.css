@@ -251,6 +251,7 @@ nav .dropdown {
   }
   .bio .top {
     padding: 20px;
+    padding-top: 50px;
     flex-direction: column;
   }
   .bio .top .left1 {
