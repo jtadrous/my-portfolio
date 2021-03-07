@@ -227,6 +227,22 @@ nav .dropdown {
   text-align: left;
 }
 
+@media only screen and (max-width: 980px) {
+  .bio {
+    font-size: 16px;
+  }
+  .bio .top {
+    padding: 20px;
+    flex-direction: column;
+  }
+  .bio .top .left1 {
+    padding: 0;
+    width: 100%;
+  }
+  .bio .top .right1 {
+    width: 100%;
+  }
+}
 /* styling for the contact page */
 .contact {
   width: 80%;
