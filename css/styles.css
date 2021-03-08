@@ -605,6 +605,16 @@ footer {
   width: 60%;
   height: auto;
 }
+.work button {
+  background-color: black;
+  font-size: 18px;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
 
 @media only screen and (max-width: 980px) {
   .work {
@@ -620,5 +630,9 @@ footer {
   }
   .work img {
     width: 100%;
+  }
+  .work button {
+    margin-top: 0;
+    margin-bottom: 20px;
   }
 }
