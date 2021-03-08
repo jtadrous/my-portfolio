@@ -124,52 +124,138 @@ nav .dropdown {
 }
 /* styling for the home page */
 .home {
-  width: 100%;
   margin: 165px auto auto auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  width: 80%;
+  background-color: #d1d9eb;
+  border: #b2c3eb solid 5px;
+  border-radius: 20px;
+  /*h1 {
+    width: 60%;
+    font-size: 40px;
+    line-height: 2;
+    color: #965f60;
+    margin: auto;
+  }
+
+  .hero {
+    width: 100%;
+    height: 600px;
+    margin: 100px 0;
+    background-image: url(../images/AdobeStock_386832865.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  img {
+    width: 60%;
+    height: auto;
+    margin: auto;
+  }
+
+  .banner {
+    padding: 45px;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+    font-size: 20px;
+
+    img {
+      width: 300px;
+      height: 275px;
+      image-orientation: center;
+    }
+  }*/
 }
-.home h1 {
-  width: 60%;
-  font-size: 40px;
-  line-height: 2;
-  color: #965f60;
-  margin: auto;
-}
-.home .hero {
-  width: 100%;
-  height: 600px;
-  margin: 100px 0;
-  background-image: url(../images/AdobeStock_386832865.jpeg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.home h2 {
-  font-size: 35px;
-}
-.home img {
-  width: 60%;
-  height: auto;
-  margin: auto;
-}
-.home .banner {
-  padding: 45px;
-  width: 70%;
+.home .row1 {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  padding: 75px 75px 10px 75px;
   margin: auto;
-  font-size: 20px;
 }
-.home .banner img {
-  width: 300px;
-  height: 275px;
-  image-orientation: center;
+.home .row1 .box {
+  background-color: ghostwhite;
+  width: 650px;
+  height: 650px;
+  margin-right: 10px;
+  font-size: 40px;
+  padding: 130px 50px 50px 50px;
+  text-align: left;
+}
+.home .row1 .box button {
+  background-color: black;
+  font-size: 18px;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  cursor: pointer;
+}
+.home .row1 img {
+  margin-left: 10px;
+  width: 650px;
+  height: 650px;
+  cursor: pointer;
+}
+.home .row2 {
+  padding: 0 75px 75px 75px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+.home .row2 img {
+  width: 335px;
+  height: 335px;
+  padding: 10px;
+  cursor: pointer;
+}
+.home .row2 #first {
+  width: 670px;
+  height: 335px;
+  padding: 10px;
 }
 
+@media only screen and (max-width: 980px) {
+  .home {
+    flex-direction: column;
+  }
+  .home .row1 {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .home .row1 .box {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    font-size: 16px;
+  }
+  .home .row1 .box button {
+    font-size: 16px;
+  }
+  .home .row1 img {
+    width: 70%;
+    height: auto;
+    padding-top: 20px;
+  }
+  .home .row2 {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .home .row2 img {
+    max-width: 100%;
+    height: auto;
+  }
+}
 /* styling for the about/bio page */
 .bio {
   width: 80%;
