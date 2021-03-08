@@ -458,6 +458,10 @@ nav .dropdown {
     width: 75%;
     margin: auto;
   }
+  .design .col1 .container .text {
+    font-size: 13px;
+    padding: 10px;
+  }
 }
 /* styling for the footer */
 footer {

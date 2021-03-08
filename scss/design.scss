@@ -74,6 +74,13 @@
     .col1 {
       width: 75%;
       margin: auto;
+
+      .container {
+        .text {
+          font-size: 13px;
+          padding: 10px;
+        }
+      }
     }
   }
 }
