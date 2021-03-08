@@ -74,3 +74,59 @@
     }
   }
 }
+
+@media only screen and (max-width: 980px) {
+  .contact {
+    flex-direction: column;
+    padding-bottom: 30px;
+
+    .left2 {
+      width: 85%;
+      text-align: center;
+      margin: 0 auto;
+      padding: 50px 0 15px 0;
+      font-size: 18px;
+
+      .icons {
+        img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+
+    .right2 {
+      width: 85%;
+      margin: auto;
+
+      h2 {
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .inputs {
+        padding: 10px;
+
+        #fname,
+        #lname,
+        #email,
+        #subject,
+        #message {
+          width: 100%;
+          padding: 10px;
+        }
+      }
+
+      .button {
+        float: none;
+        padding: 0 0 20px 0;
+
+        #submit {
+          margin: 0 auto;
+          display: block;
+        }
+      }
+    }
+  }
+}

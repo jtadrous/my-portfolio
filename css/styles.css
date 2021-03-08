@@ -345,6 +345,51 @@ nav .dropdown {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 980px) {
+  .contact {
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+  .contact .left2 {
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px 0 15px 0;
+    font-size: 18px;
+  }
+  .contact .left2 .icons img {
+    width: 40px;
+    height: 40px;
+  }
+  .contact .right2 {
+    width: 85%;
+    margin: auto;
+  }
+  .contact .right2 h2 {
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+  }
+  .contact .right2 .inputs {
+    padding: 10px;
+  }
+  .contact .right2 .inputs #fname,
+.contact .right2 .inputs #lname,
+.contact .right2 .inputs #email,
+.contact .right2 .inputs #subject,
+.contact .right2 .inputs #message {
+    width: 100%;
+    padding: 10px;
+  }
+  .contact .right2 .button {
+    float: none;
+    padding: 0 0 20px 0;
+  }
+  .contact .right2 .button #submit {
+    margin: 0 auto;
+    display: block;
+  }
+}
 /* styling for the design page */
 .design {
   width: 100%;
