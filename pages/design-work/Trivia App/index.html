@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Trivia App Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ||||||||||||||  TITLE SCREEN  ||||||||||||||| -->
+  <div class='screen' id='title-screen'> 
+    <div class='game-title'>Professor's Wheel</div>
+    <img src="https://orig00.deviantart.net/15e4/f/2011/116/f/4/color_wheel_dock_icon_by_andybaumgar-d3ezjgc.png" alt="color" class="wheel" > 
+    <button class='play-button' onclick="getCategoryScreen()">Play!</button>
+  </div>
+
+  <!-- ||||||||||||||  CATEGORY SCREEN  ||||||||||||||| -->
+  <div class='screen' id='category-screen' hidden>
+    <div class='game-title'>Professor's Wheel</div>
+    <div class='instructions'>Spin the Wheel!</div>
+    <div class='instructions'>You have 2 minutes to answer all 10 questions!</div>
+    <div class='category-set'></div>
+    <img id='spin-wheel' src="https://i.pinimg.com/originals/22/fd/b7/22fdb770e59708a6f908c3e23e29b54f.png" alt="wheel2" class="wheel2">
+    
+    <button class='next-button' id='spin-button' onclick="setTimer(); startTimer();">Stop the wheel!</button>
+  </div>
+
+  <!-- ||||||||||||||  QUESTION SCREEN  ||||||||||||||| -->
+  <div class='screen' id='question-screen' hidden>
+    <div id='number'>1/10</div>
+    <div id='timer-show'>
+         <span id="timer"></span>
+    </div>
+    <div id='score'>Score: 0</div>
+    <div id='question-block'>
+      <div id='category'></div>
+      <div class='question' id='question'></div>
+      <div class='answer-set'>
+        <button class='answer-button' id='correctAnswer'></button>
+        <button class='answer-button' id='incorrectAnswer1'></button>
+        <button class='answer-button' id='incorrectAnswer2'></button>
+        <button class='answer-button' id='incorrectAnswer3'></button>
+      </div>
+    </div>
+    <button class='next-button'>NEXT QUESTION</button>
+  </div>
+  
+
+  <!-- |||||||||||||| RESULT SCREEN |||||||||||||||| -->
+  <div class='screen' id='result-screen' hidden> 
+    <div class='game-title'>Professor's Wheel</div>
+    <div class='instructions'>Congrats!</div>
+    <button id='num-button' onclick="displayNum()">Score!</button>
+    <div id='result'></div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Professor_Working_at_his_Desk_GIF_Loop.gif" alt="color" class="professor"> 
+    <button id='again-button' onclick="playAgain()">Play Again!</button>
+  </div>
+
+
+ 
+  <!-- ||||||||||||||  JS LIBRARIES  ||||||||||||||| -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

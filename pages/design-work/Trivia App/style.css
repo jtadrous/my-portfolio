@@ -1,0 +1,230 @@
+body {
+    margin:0;
+    background: linear-gradient(#adc5f7, #ffe6a8, #adc5f7);
+    padding: 15px;
+}
+
+.wheel {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.wheel2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    width: 100%;
+}
+.professor {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+.game-title {
+    font-size: 34px;
+    font-family:'Berkshire Swash', cursive;
+    color: #4286f4;
+    text-align: center;
+    margin: 12px auto;
+}
+.instructions {
+    margin: 8px auto;
+    font-family:'courier', bold;
+    text-align: center;
+}
+
+#score {
+    margin: 8px auto;
+    font-family:'courier new';
+    text-align: center;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+#timer-show {
+    margin: 8px auto;
+    font-family:'courier new';
+    text-align: center;
+    display: inline-block;
+}
+
+#result {
+    margin: 8px auto;
+    font-family:'courier new';
+    text-align: center;
+}
+
+/*The number out of 10 questions that the user is currently on*/
+#number {
+    margin: 8px auto;
+    margin-right: 90px;
+    margin-left: 10px;
+    font-family:'courier new';
+    text-align: center;
+    display: inline-block;
+}
+
+.screen {
+    max-width: 350px;
+    min-height: 500px;
+    margin: 15px auto;
+    padding: 10px;
+    box-shadow: 2px 2px 20px #777;
+    border: 1px solid #aaa;
+    background-color: #ffdf91;
+    border-radius: 10px;
+}
+
+#result-screen {
+    font-size: 34px;
+    font-family:'Berkshire Swash', cursive;
+    color: #4286f4;
+    text-align: center;
+    margin: 12px auto;
+}
+
+.question {
+    font-size: 18px;
+    text-align: center;
+    font-family:'courier new';
+    margin-top: 15px;
+}
+#category {
+    font-size: 20px;
+    text-align: center;
+    font-family: berkshire swash;
+    margin-top: 15px;
+}
+.play-button {
+    background-color: #a6c7fc;
+    display: block;
+    font-family:'courier';
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 100px;
+    line-height: 35px;
+}
+
+.answer-button, .category-button {
+    background-color: #a6c7fc;
+    display: block;
+    font-family:'courier', bold;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 300px;
+    line-height: 25px;
+    border-radius: 15px;
+}
+
+.score-button {
+    background-color: #a6c7fc;
+    display: block;
+    font-family:'courier', bold;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 300px;
+    line-height: 25px;
+}
+.answer-button > i {
+    position: absolute;
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 24px;
+}
+#spin-button {
+    background-color: #a6c7fc;
+    display: block;
+    font-family:'courier', bold;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 200px;
+    line-height: 35px;
+}
+#again-button {
+    background-color: #a6c7fc;
+    display: block;
+    font-family:'courier', bold;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 200px;
+    line-height: 35px;
+}
+#num-button {
+    background-color: #a6c7fc;
+    display: block;
+    font-family:'courier', bold;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 200px;
+    line-height: 35px;
+}
+
+button:disabled {
+    color: #aaa;
+}
+
+.next-button {
+    background-color: #aaa;
+    font-family: courier;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    line-height: 24px;
+}
+.category-screen {
+    display: none;
+}
+.title-screen {
+    display: block;
+}
+.question-screen {
+    display: none;
+}
+
+#spin-wheel {
+    transform-origin:50% 50%;
+    animation:5s rotateRight infinite linear;
+}
+
+@keyframes rotateRight {
+    100% {
+        transform:rotate(360deg);
+    }
+}
+*
+/* de from w3schools for the skill bar on the result screen/ *
+/* Make sure that padding behaves as expected */
+ * {
+    box-sizing:border-box
+}
+/* Container for skill bars */
+ .container {
+    width: 100%;
+    /* Full width */
+    background-color: #ddd;
+    /* Grey background */
+}
