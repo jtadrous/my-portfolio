@@ -231,25 +231,27 @@ nav .dropdown {
   }
   .home .row1 {
     flex-direction: column;
-    padding: 20px;
+    padding: 20px 20px 10px 20px;
   }
   .home .row1 .box {
-    width: 70%;
+    width: 90%;
     height: auto;
     margin: 0 auto;
     font-size: 16px;
+    padding: 20px;
   }
   .home .row1 .box button {
     font-size: 16px;
   }
   .home .row1 img {
-    width: 70%;
+    width: 90%;
     height: auto;
     padding-top: 20px;
+    margin: 0 auto;
   }
   .home .row2 {
     flex-direction: column;
-    padding: 20px;
+    padding: 0 20px 20px 20px;
   }
   .home .row2 img {
     max-width: 100%;
