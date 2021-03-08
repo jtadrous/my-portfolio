@@ -459,8 +459,11 @@ nav .dropdown {
     margin: auto;
   }
   .design .col1 .container .text {
-    font-size: 13px;
+    font-size: 12px;
     padding: 10px;
+  }
+  .design .col1 .container .text h2 {
+    font-size: 18px;
   }
 }
 /* styling for the footer */
