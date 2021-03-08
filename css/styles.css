@@ -449,6 +449,16 @@ nav .dropdown {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 980px) {
+  .design {
+    flex-direction: column;
+    margin: 125px auto auto auto;
+  }
+  .design .col1 {
+    width: 75%;
+    margin: auto;
+  }
+}
 /* styling for the footer */
 footer {
   width: 100%;

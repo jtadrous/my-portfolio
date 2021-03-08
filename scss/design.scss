@@ -65,3 +65,15 @@
     }
   }
 }
+
+@media only screen and (max-width: 980px) {
+  .design {
+    flex-direction: column;
+    margin: 125px auto auto auto;
+
+    .col1 {
+      width: 75%;
+      margin: auto;
+    }
+  }
+}
