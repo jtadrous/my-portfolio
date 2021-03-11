@@ -48,7 +48,6 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 2px 10px 0px $overlay-black;
   }
 
   .dropdown {
@@ -86,7 +85,6 @@ nav {
       display: inline-block;
 
       .dropbtn {
-        box-shadow: 0px 2px 10px 0px $overlay-black;
         background-color: $white;
         padding: 30px;
         font-size: 16px;

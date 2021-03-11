@@ -73,7 +73,6 @@ nav a.current {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.4);
 }
 nav .dropdown {
   display: none;
@@ -104,7 +103,6 @@ nav .dropdown {
     display: inline-block;
   }
   nav .dropdown .dropbtn {
-    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.4);
     background-color: #f5f7f7;
     padding: 30px;
     font-size: 16px;
@@ -207,7 +205,7 @@ nav .dropdown {
   }*/
 }
 .home .row1 .box {
-  background-color: ghostwhite;
+  background-color: #e5d8cc;
   width: 50%;
   margin-right: 10px;
   font-size: 30px;
