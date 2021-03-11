@@ -383,11 +383,12 @@ nav .dropdown {
     width: 100%;
   }
   .bio .top .right1 {
+    padding: 0;
     width: 100%;
   }
   .bio .top .right1 img {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    max-height: 200px;
+    padding: 20px 0 20px 0;
   }
   .bio .bottom {
     padding-top: 15px;

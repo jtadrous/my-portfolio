@@ -104,11 +104,12 @@
       }
 
       .right1 {
+        padding: 0;
         width: 100%;
 
         img {
-          padding-top: 30px;
-          padding-bottom: 30px;
+          max-height: 200px;
+          padding: 20px 0 20px 0;
         }
       }
     }
