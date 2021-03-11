@@ -1,7 +1,7 @@
 /* styling for the design page */
 .design {
   width: 100%;
-  margin: 165px auto auto auto;
+  margin: 80px auto auto auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -46,7 +46,7 @@
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-        padding: 50px;
+        padding: 20px;
         text-align: center;
       }
     }
@@ -79,7 +79,6 @@
       .container {
         .text {
           font-size: 12px;
-          padding: 10px;
 
           h2 {
             font-size: 18px;
