@@ -4,7 +4,7 @@
   display: flex;
   background-color: $white;
   justify-content: center;
-  margin: 165px auto auto auto;
+  margin: 135px auto auto auto;
   border: $gray-border solid 5px;
   border-radius: 20px;
   font-size: 23px;
@@ -15,6 +15,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
+    padding-left: 40px;
+    font-size: 20px;
 
     a {
       color: $black;
@@ -37,7 +40,7 @@
   .right2 {
     background-color: $peach;
     width: 60%;
-    margin: 70px;
+    margin: 50px;
     justify-content: center;
 
     h2 {

@@ -1,7 +1,7 @@
 /* styling for the navigation bar */
 nav {
   width: 100%;
-  height: 110px;
+  height: 90px;
   top: 0; /* hard set to position the nav bar at the top no matter what */
   position: fixed;
   display: flex;
@@ -14,15 +14,15 @@ nav {
   h1 {
     width: 40%;
     height: 100%;
-    font-size: 50px;
-    padding: 35px 30px 30px 70px;
+    font-size: 40px;
+    padding: 30px 30px 30px 60px;
     color: $black;
   }
 
   .links {
     width: 60%;
     line-height: 40px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bolder;
     display: flex;
     flex-direction: row;
@@ -37,7 +37,7 @@ nav {
   }
 
   a.current {
-    height: 115px;
+    height: 95px;
     width: 175px;
     background-color: $white;
     border-left: 5px solid $gray-border;
