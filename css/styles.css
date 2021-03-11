@@ -10,7 +10,7 @@
 html,
 body {
   height: 100%;
-  background-color: #feffff;
+  background-color: #e5e4cc;
 }
 
 h1,
@@ -32,20 +32,22 @@ nav {
   position: fixed;
   display: flex;
   align-items: center;
-  background-color: #feffff;
-  border-bottom: 5px solid #def2f1;
+  background-color: #e5e4cc;
+  border-bottom: 5px solid #d4d2aa;
   z-index: 5;
+  box-shadow: 5px 0px 15px 0px rgba(0, 0, 0, 0.4);
 }
 nav h1 {
   width: 40%;
   height: 100%;
   font-size: 50px;
   padding: 35px 30px 30px 70px;
+  color: #19181a;
 }
 nav .links {
   width: 60%;
   line-height: 40px;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bolder;
   display: flex;
   flex-direction: row;
@@ -56,16 +58,22 @@ nav .links {
   height: 100%;
 }
 nav .links a {
+  color: #19181a;
   text-decoration: none;
 }
 nav a.current {
-  height: 125px;
+  height: 115px;
   width: 175px;
-  background-color: #d1d9eb;
-  border-bottom: 5px solid #b2c3eb;
+  background-color: #f5f7f7;
+  border-left: 5px solid #d6d6d6;
+  border-right: 5px solid #d6d6d6;
+  border-bottom: 5px solid #d6d6d6;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.4);
 }
 nav .dropdown {
   display: none;
@@ -82,38 +90,44 @@ nav .dropdown {
     width: 10%;
   }
   nav a.current {
+    background-color: #e5d8cc;
+    border-bottom: 5px solid #d3c7bd;
+    border-right: none;
+    border-left: none;
+    border-radius: 0px;
     height: 50px;
+    box-shadow: none;
   }
   nav .dropdown {
     float: right;
-    text-align: right;
     position: relative;
     display: inline-block;
-    border-top: 5px solid #b2c3eb;
-    border-bottom: 5px solid #b2c3eb;
-    border-left: 5px solid #b2c3eb;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
   }
   nav .dropdown .dropbtn {
-    background-color: #d1d9eb;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.4);
+    background-color: #f5f7f7;
     padding: 30px;
     font-size: 16px;
-    border: none;
+    border-right: 1px solid #f5f7f7;
+    border-top: 5px solid #d6d6d6;
+    border-bottom: 5px solid #d6d6d6;
+    border-left: 5px solid #d6d6d6;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
     cursor: pointer;
   }
   nav .dropdown .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: #f5f7f7;
     min-width: 160px;
     overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
     right: 0;
     z-index: 1;
   }
   nav .dropdown .dropdown-content a {
-    color: black;
+    color: #19181a;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -130,8 +144,8 @@ nav .dropdown {
   justify-content: center;
   text-align: center;
   width: 85%;
-  background-color: #57ba98;
-  border: #3b945e solid 5px;
+  background-color: #f5f7f7;
+  border: #d6d6d6 solid 5px;
   border-radius: 20px;
   /*h1 {
     width: 60%;
@@ -201,7 +215,7 @@ nav .dropdown {
   text-align: left;
 }
 .home .row1 .box button {
-  background-color: black;
+  background-color: #19181a;
   font-size: 18px;
   border-radius: 10px;
   color: white;
@@ -276,10 +290,10 @@ nav .dropdown {
   width: 85%;
   display: flex;
   flex-direction: column;
-  background-color: #d1d9eb;
+  background-color: #f5f7f7;
   justify-content: center;
   margin: 165px auto auto auto;
-  border: #b2c3eb solid 5px;
+  border: #d6d6d6 solid 5px;
   border-radius: 20px;
   font-size: 23px;
 }
@@ -306,7 +320,7 @@ nav .dropdown {
   padding-top: 80px;
 }
 .bio hr {
-  border-top: 5px solid #b2c3eb;
+  border-top: 5px solid #d6d6d6;
   border-radius: 30px;
   border-left: none;
   border-bottom: none;
@@ -383,10 +397,10 @@ nav .dropdown {
 .contact {
   width: 85%;
   display: flex;
-  background-color: #d1d9eb;
+  background-color: #f5f7f7;
   justify-content: center;
   margin: 165px auto auto auto;
-  border: #b2c3eb solid 5px;
+  border: #d6d6d6 solid 5px;
   border-radius: 20px;
   font-size: 23px;
 }
@@ -396,6 +410,10 @@ nav .dropdown {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.contact .left2 a {
+  color: #19181a;
+  cursor: pointer;
 }
 .contact .left2 .icons {
   display: flex;
@@ -408,7 +426,7 @@ nav .dropdown {
   height: 60px;
 }
 .contact .right2 {
-  background-color: white;
+  background-color: #e5d8cc;
   width: 60%;
   margin: 70px;
   justify-content: center;
@@ -426,19 +444,19 @@ nav .dropdown {
 .contact .right2 .inputs #subject {
   width: 45%;
   padding: 20px;
-  border: black solid 3px;
+  border: #19181a solid 3px;
 }
 .contact .right2 .inputs #message {
   width: 92%;
   padding: 20px;
-  border: black solid 3px;
+  border: #19181a solid 3px;
 }
 .contact .right2 .button {
   padding: 0 55px 50px 0;
   float: right;
 }
 .contact .right2 .button #submit {
-  background-color: black;
+  background-color: #19181a;
   border-radius: 10px;
   color: white;
   padding: 15px 25px;
@@ -508,6 +526,7 @@ nav .dropdown {
 .design .col1 .container {
   position: relative;
   margin-top: 70px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
 }
 .design .col1 .container img {
   width: 100%;
@@ -525,11 +544,11 @@ nav .dropdown {
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
-  background-color: #965f60;
+  background-color: #e5d8cc;
 }
 .design .col1 .container .text {
-  color: white;
-  font-size: 22px;
+  color: #19181a;
+  font-size: 16px;
   position: relative;
   top: 50%;
   left: 50%;
@@ -542,7 +561,7 @@ nav .dropdown {
 }
 .design .col1 button {
   padding: 0 55px 50px 0;
-  background-color: black;
+  background-color: #19181a;
   border-radius: 10px;
   color: white;
   padding: 15px 25px;
@@ -580,10 +599,10 @@ footer {
   width: 85%;
   display: flex;
   flex-direction: column;
-  background-color: #d1d9eb;
+  background-color: #f5f7f7;
   justify-content: center;
   margin: 165px auto auto auto;
-  border: #b2c3eb solid 5px;
+  border: #d6d6d6 solid 5px;
   border-radius: 20px;
   font-size: 23px;
   text-align: center;
@@ -598,6 +617,7 @@ footer {
 .work .top a {
   width: 20%;
   margin: 0 auto;
+  color: #19181a;
   text-decoration: none;
   cursor: pointer;
 }
@@ -611,14 +631,18 @@ footer {
   padding: 30px;
   line-height: 40px;
 }
-.work img {
-  padding: 30px;
+.work .bottom {
   margin: 0 auto;
+  padding: 30px 0px;
+  width: 100%;
+}
+.work .bottom img {
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
   width: 60%;
   height: auto;
 }
 .work button {
-  background-color: black;
+  background-color: #19181a;
   font-size: 18px;
   border-radius: 10px;
   color: white;

@@ -6,11 +6,9 @@
   justify-content: center;
   text-align: center;
   width: 85%;
-  background-color: $green;
-  border: $green-border solid 5px;
+  background-color: $white;
+  border: $gray-border solid 5px;
   border-radius: 20px;
-  //min-height: 1000px;
-  //font-size: 23px;
 
   .row1 {
     display: flex;
@@ -31,7 +29,7 @@
       text-align: left;
 
       button {
-        background-color: black;
+        background-color: $black;
         font-size: 18px;
         border-radius: 10px;
         color: white;

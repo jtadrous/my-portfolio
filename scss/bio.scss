@@ -3,10 +3,10 @@
   width: 85%;
   display: flex;
   flex-direction: column;
-  background-color: $blue;
+  background-color: $white;
   justify-content: center;
   margin: 165px auto auto auto;
-  border: $blue-border solid 5px;
+  border: $gray-border solid 5px;
   border-radius: 20px;
   font-size: 23px;
 
@@ -37,7 +37,7 @@
   }
 
   hr {
-    border-top: 5px solid $blue-border;
+    border-top: 5px solid $gray-border;
     border-radius: 30px;
     border-left: none;
     border-bottom: none;
