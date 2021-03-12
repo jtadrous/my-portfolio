@@ -58,6 +58,8 @@ nav {
 @media only screen and (max-width: 980px) {
   //Code similar to tutorial at https://www.w3schools.com/howto/howto_js_dropdown.asp
   nav {
+    height: 110px;
+
     h1 {
       width: 90%;
       font-size: 30px;
