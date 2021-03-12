@@ -1,6 +1,6 @@
 /* styling for the contact page */
 .contact {
-  width: 85%;
+  width: 75%;
   display: flex;
   background-color: $white;
   justify-content: center;
@@ -85,6 +85,7 @@
 
 @media only screen and (max-width: 980px) {
   .contact {
+    width: 85%;
     flex-direction: column;
     padding-bottom: 30px;
 
