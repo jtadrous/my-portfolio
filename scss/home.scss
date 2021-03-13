@@ -75,6 +75,10 @@
       cursor: pointer;
       margin: 0 auto;
 
+      a {
+        color: $black;
+      }
+
       figcaption {
         font-size: 20px;
       }

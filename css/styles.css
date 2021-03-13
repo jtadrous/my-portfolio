@@ -207,6 +207,9 @@ nav .dropdown {
   cursor: pointer;
   margin: 0 auto;
 }
+.home .row2 figure a {
+  color: #19181a;
+}
 .home .row2 figure figcaption {
   font-size: 20px;
 }
