@@ -151,7 +151,7 @@ nav .dropdown {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  width: 75%;
+  width: 85%;
   background-color: #f5f7f7;
   border: #d6d6d6 solid 5px;
   border-radius: 20px;
@@ -387,7 +387,7 @@ nav .dropdown {
 }
 /* styling for the contact page */
 .contact {
-  width: 75%;
+  width: 85%;
   display: flex;
   background-color: #f5f7f7;
   justify-content: center;
