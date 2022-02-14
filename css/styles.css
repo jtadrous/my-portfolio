@@ -37,11 +37,18 @@ nav {
   z-index: 5;
   box-shadow: 5px 0px 15px 0px rgba(0, 0, 0, 0.4);
 }
+nav .logo {
+  margin-left: 30px;
+}
+nav .logo img {
+  width: 60px;
+  height: 70px;
+}
 nav h1 {
   width: 40%;
   height: 100%;
   font-size: 40px;
-  padding: 30px 30px 30px 60px;
+  padding: 30px 30px 30px 10px;
   color: #19181a;
 }
 nav .links {
