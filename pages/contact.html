@@ -1,65 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact - Julie Tadrous</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css" />
     <script src="../app/app.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <h1>Julie Tadrous</h1>
-        <!--<div class="logo"><img src="" alt="logo"><br/>-->
-        <div class="links">
-            <a href="../index.html"><em>HOME</em></a>
-            <a href="bio.html"><em>BIO</em></a>
-            <a href="design.html"><em>DESIGN</em></a>
-            <a href="artwork.html"><em>ARTWORK</em></a>
-            <a href="contact.html" class="current"><em>CONTACT</em></a>
+      <div class="logo"><img src="images/black-logo.png" alt="logo" /></div>
+      <br />
+      <h1>Julie Tadrous</h1>
+      <!--<div class="logo"><img src="" alt="logo"><br/>-->
+      <div class="links">
+        <a href="../index.html"><em>HOME</em></a>
+        <a href="bio.html"><em>BIO</em></a>
+        <a href="design.html"><em>DESIGN</em></a>
+        <a href="artwork.html"><em>ARTWORK</em></a>
+        <a href="contact.html" class="current"><em>CONTACT</em></a>
+      </div>
+      <!--Code similar to tutorial at https://www.w3schools.com/howto/howto_js_dropdown.asp-->
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Menu</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="../index.html"><em>HOME</em></a>
+          <a href="bio.html"><em>BIO</em></a>
+          <a href="design.html"><em>DESIGN</em></a>
+          <a href="artwork.html"><em>ARTWORK</em></a>
+          <a href="contact.html" class="current"><em>CONTACT</em></a>
         </div>
-        <!--Code similar to tutorial at https://www.w3schools.com/howto/howto_js_dropdown.asp-->
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Menu</button>
-            <div id="myDropdown" class="dropdown-content">
-                <a href="../index.html"><em>HOME</em></a>
-                <a href="bio.html"><em>BIO</em></a>
-                <a href="design.html"><em>DESIGN</em></a>
-                <a href="artwork.html"><em>ARTWORK</em></a>
-                <a href="contact.html" class="current"><em>CONTACT</em></a>
-            </div>
-        </div>
+      </div>
     </nav>
     <section class="contact">
-        <div class="left2">
-            <a href="mailto:jtadrous@iu.edu"><h2>jtadrous@iu.edu</h2></a>
-            <a href="../images/Julie Tadrous Resume GitHub 2021.pdf" download><h3>Download 2021 Resume/CV</h3></a>
-            <div class="icons">
-                <a href="https://www.linkedin.com/in/julie-tadrous-752b3a193"><img src="../images/iconfinder_Linkedin.png" alt="iconfinder_Linkedin"></a>
-                <a href="https://www.pinterest.com/jtadrous62/boards/"><img src="../images/iconfinder_Pinterest.png" alt="iconfinder_Pinterest"></a>
-                <a href="https://github.com/jtadrous"><img src="../images/iconfinder_github.png" alt="iconfinder_github"></a>
-            </div>
+      <div class="left2">
+        <a href="mailto:jtadrous@iu.edu"><h2>jtadrous@iu.edu</h2></a>
+        <a href="../images/Julie Tadrous Resume GitHub 2021.pdf" download
+          ><h3>Download 2021 Resume/CV</h3></a
+        >
+        <div class="icons">
+          <a href="https://www.linkedin.com/in/julie-tadrous-752b3a193"
+            ><img
+              src="../images/iconfinder_Linkedin.png"
+              alt="iconfinder_Linkedin"
+          /></a>
+          <a href="https://www.pinterest.com/jtadrous62/boards/"
+            ><img
+              src="../images/iconfinder_Pinterest.png"
+              alt="iconfinder_Pinterest"
+          /></a>
+          <a href="https://github.com/jtadrous"
+            ><img src="../images/iconfinder_github.png" alt="iconfinder_github"
+          /></a>
         </div>
-        <div class="right2">
-            <h2>Get in Touch!</h2>
-            <form method="POST" action="https://formspree.io/f/xyybalda">
-                <div class="inputs">
-                    <input type="text" id="fname" name="fname" placeholder="First Name">&nbsp;&nbsp;
-                    <input type="text" id="lname" name="lname" placeholder="Last Name"><br/><br/>
-                    <input type="email" id="email" name="email" placeholder="Email">&nbsp;&nbsp;
-                    <input type="text" id="subject" name="subject" placeholder="Subject"><br/><br/>
-                    <textarea id="message" name="message" placeholder="Type your message here..."></textarea><br/><br/>
-                </div>
-                <div class="button">
-                    <input type="submit" id="submit" value="Send">
-                </div>
-            </form>
-        </div>
+      </div>
+      <div class="right2">
+        <h2>Get in Touch!</h2>
+        <form method="POST" action="https://formspree.io/f/xyybalda">
+          <div class="inputs">
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="First Name"
+            />&nbsp;&nbsp;
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              placeholder="Last Name"
+            /><br /><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+            />&nbsp;&nbsp;
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Subject"
+            /><br /><br />
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Type your message here..."
+            ></textarea
+            ><br /><br />
+          </div>
+          <div class="button">
+            <input type="submit" id="submit" value="Send" />
+          </div>
+        </form>
+      </div>
     </section>
-    <br/><br/><br/>
+    <br /><br /><br />
     <footer>
-        <h2>© 2021 by Julie Tadrous.</h2>
+      <h2>© 2021 by Julie Tadrous.</h2>
     </footer>
-</body>
+  </body>
 </html>

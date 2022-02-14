@@ -1,157 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Artwork - Julie Tadrous</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css" />
     <script src="../app/app.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <h1>Julie Tadrous</h1>
-        <!--<div class="logo"><img src="" alt="logo"><br/>-->
-        <div class="links">
-            <a href="../index.html"><em>HOME</em></a>
-            <a href="bio.html"><em>BIO</em></a>
-            <a href="design.html"><em>DESIGN</em></a>
-            <a href="artwork.html" class="current"><em>ARTWORK</em></a>
-            <a href="contact.html"><em>CONTACT</em></a>
+      <div class="logo"><img src="images/black-logo.png" alt="logo" /></div>
+      <br />
+      <h1>Julie Tadrous</h1>
+      <!--<div class="logo"><img src="" alt="logo"><br/>-->
+      <div class="links">
+        <a href="../index.html"><em>HOME</em></a>
+        <a href="bio.html"><em>BIO</em></a>
+        <a href="design.html"><em>DESIGN</em></a>
+        <a href="artwork.html" class="current"><em>ARTWORK</em></a>
+        <a href="contact.html"><em>CONTACT</em></a>
+      </div>
+      <!--Code similar to tutorial at https://www.w3schools.com/howto/howto_js_dropdown.asp-->
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Menu</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="../index.html"><em>HOME</em></a>
+          <a href="bio.html"><em>BIO</em></a>
+          <a href="design.html"><em>DESIGN</em></a>
+          <a href="artwork.html" class="current"><em>ARTWORK</em></a>
+          <a href="contact.html"><em>CONTACT</em></a>
         </div>
-        <!--Code similar to tutorial at https://www.w3schools.com/howto/howto_js_dropdown.asp-->
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Menu</button>
-            <div id="myDropdown" class="dropdown-content">
-                <a href="../index.html"><em>HOME</em></a>
-                <a href="bio.html"><em>BIO</em></a>
-                <a href="design.html"><em>DESIGN</em></a>
-                <a href="artwork.html" class="current"><em>ARTWORK</em></a>
-                <a href="contact.html"><em>CONTACT</em></a>
-            </div>
-        </div>
+      </div>
     </nav>
     <section class="design">
-        <div class="col1">
-            <div class="container">
-                <img src="../images/Chair 3.jpg" alt="scultpure_chair">
-                <div class="overlay">
-                    <div class="text">
-                        <h3>Chair Sculpture</h3>
-                        <em><h5>Wood Shop Project, 2020</h5></em>
-                        <p>An old, thrifted chair reinvented into a cozy, lounge chair for any home. This Chair Sculpture stands to express the emotion of bright, child-like happiness. It was created by fully disassembling the parts of an old chair, cutting and fastening them together in a shape similar to a rocking chair, and painting the wood a neutral white to let the teal upholstery pop. Broken CDs serve as the detailing on the arm rests to add some shine.</p>
-                        <a href="../pages/art-work/chair.html"><button>More</button></a>
-                    </div>
-                  </div>
+      <div class="col1">
+        <div class="container">
+          <img src="../images/Chair 3.jpg" alt="scultpure_chair" />
+          <div class="overlay">
+            <div class="text">
+              <h3>Chair Sculpture</h3>
+              <em><h5>Wood Shop Project, 2020</h5></em>
+              <p>
+                An old, thrifted chair reinvented into a cozy, lounge chair for
+                any home. This Chair Sculpture stands to express the emotion of
+                bright, child-like happiness. It was created by fully
+                disassembling the parts of an old chair, cutting and fastening
+                them together in a shape similar to a rocking chair, and
+                painting the wood a neutral white to let the teal upholstery
+                pop. Broken CDs serve as the detailing on the arm rests to add
+                some shine.
+              </p>
+              <a href="../pages/art-work/chair.html"><button>More</button></a>
             </div>
-            <div class="container">
-                <img src="../images/EE Letterhead.jpg" alt="everlasting_emblems_letterhead">
-                <div class="overlay">
-                    <div class="text">
-                        <h3>Everlasting Emblems</h3>
-                        <em><h5>Logo and Stationary Project, 2018</h5></em>
-                        <p>A fictional company logo and full stationary set with a teal accent color to match. Everlasting Emblems symbolizes any sort of Logo-Maker or Graphic Design company. The full stationary set was all created using Adobe Illustrator, and includes an envelope, business card, and letterhead.</p>
-                        <a href="../pages/art-work/stationary.html"><button>More</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <img src="../images/table.jpg" alt="table_spread_painting">
-                <div class="overlay">
-                    <div class="text">
-                        <h3>Drawings + Paintings</h3>
-                        <em><h5>Beginning Drawing and Painting Coursework, 2019</h5></em>
-                        <p>A series of artwork created during the Beginning Drawing I and Beginning Painting I courses offered at the Herron School of Art. Most paintings were created using oil-based paints and fine brushes. All drawings were created using charcoal sticks and pencils.</p>
-                        <a href="../pages/art-work/paintings.html"><button>More</button></a>
-                    </div>
-                  </div>
-            </div>
+          </div>
         </div>
-        <div class="col1">
-            <div class="container">
-                <img src="../images/MP Gif.gif" alt="movie_posters_gif">
-                <div class="overlay">
-                    <div class="text">
-                        <h3>Investigation Exploration</h3>
-                        <em><h5>Movie Poster Project, 2018</h5></em>
-                        <p>A series of four different movie posters, made using Adobe Illustrator, depicting the same fictional movie, Investigation Exploration. Investigation Exploration is supposed to be an action movie of three sisters moving to the streets of Egypt for the summer to find happiness and passion. Each movie poster was made with a different aspect of the movie in mind and each has its own voice.</p>
-                        <a href="../pages/art-work/movie_posters.html"><button>More</button></a>
-                    </div>
-                </div>
+        <div class="container">
+          <img
+            src="../images/EE Letterhead.jpg"
+            alt="everlasting_emblems_letterhead"
+          />
+          <div class="overlay">
+            <div class="text">
+              <h3>Everlasting Emblems</h3>
+              <em><h5>Logo and Stationary Project, 2018</h5></em>
+              <p>
+                A fictional company logo and full stationary set with a teal
+                accent color to match. Everlasting Emblems symbolizes any sort
+                of Logo-Maker or Graphic Design company. The full stationary set
+                was all created using Adobe Illustrator, and includes an
+                envelope, business card, and letterhead.
+              </p>
+              <a href="../pages/art-work/stationary.html"
+                ><button>More</button></a
+              >
             </div>
-            <div class="container">
-                <img src="../images/Screen Cap.png" alt="bubble_bobble_start">
-                <div class="overlay">
-                    <div class="text">
-                        <h3>Bubble Bobble</h3>
-                        <em><h5>Stop Motion Animation, 2018</h5></em>
-                        <p>A stop motion animation of the iconic Bubble Bobble game. All of the graphics were printed out and placed on a board. The video features 362 different images, which were edited and sequenced in Adobe After Effects.</p>
-                        <a href="../pages/art-work/bubble_bobble.html"><button>More</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <img src="../images/logotypes.png" alt="logotypes_project">
-                <div class="overlay">
-                    <div class="text">
-                        <h3>Maralumi Chocolate</h3>
-                        <em><h5>Typography Logotypes Project, 2021</h5></em>
-                        <p>A unique logotype of a chosen word crafted using typography principles. Through research, semiotic nuances of the word were identified and given a visual voice. Topics considered during the logotype development include type characters, letterform, style, texture, weight, emotional tone, etc.</p>
-                        <a href="../images/Project 1 Process Document.pdf"><button>More</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <img src="../images/Cover Design 3.png" alt="cover_design">
-                <div class="overlay">
-                    <div class="text">
-                        <h3>Percy Jackson</h3>
-                        <em><h5>Novel Cover Designs, 2021</h5></em>
-                        <p>Three different cover designs of "Percy Jackson and the Last Olympian", a novel by Rick Riordan. Each design was created in Illustrator using various tools such as gradient, curvature, and shape builder tool.</p>
-                        <a href="../pages/art-work/cover_designs.html"><button>More</button></a>
-                    </div>
-                  </div>
-            </div>
+          </div>
         </div>
-        <div class="col1">
-            <div class="container">
-                <img src="../images/4Logos.png" alt="fictional_logos">
-                <div class="overlay">
-                    <div class="text">
-                        <h3>Fictional Company Logos</h3>
-                        <em><h5>Logo Making Project, 2018</h5></em>
-                        <p>A collection of four different company logos. North Beacon, Forward Thinking, and Side Slice are all fictitious companies created for the purpose of portraying a company persona through a logo. Each of these logos were made with Adobe Illustrator using various negative space and coloring techniques.</p>
-                        <a href="../pages/art-work/fictional_logos.html"><button>More</button></a>
-                    </div>
-                  </div>
+        <div class="container">
+          <img src="../images/table.jpg" alt="table_spread_painting" />
+          <div class="overlay">
+            <div class="text">
+              <h3>Drawings + Paintings</h3>
+              <em><h5>Beginning Drawing and Painting Coursework, 2019</h5></em>
+              <p>
+                A series of artwork created during the Beginning Drawing I and
+                Beginning Painting I courses offered at the Herron School of
+                Art. Most paintings were created using oil-based paints and fine
+                brushes. All drawings were created using charcoal sticks and
+                pencils.
+              </p>
+              <a href="../pages/art-work/paintings.html"
+                ><button>More</button></a
+              >
             </div>
-            <div class="container">
-                <img src="../images/Julie Tadrous - Advertisement Project 2.jpg" alt="wine_advertisement_project">
-                <div class="overlay">
-                    <div class="text">
-                        <h3>Digital Media Imagery</h3>
-                        <em><h5>Digital Media Projects, 2021</h5></em>
-                        <p>A series of projects created in Adobe Photoshop and Illustrator for the Digital Media Imagery course offered at SoIC. The clever product image for a fictional wine company depicting flowers growing from a wine bottle was created for the advertisement project. The digital eye painting was created using various painting tools within Photoshop.</p>
-                        <a href="../pages/art-work/digital_media.html"><button>More</button></a>
-                    </div>
-                  </div>
-            </div>
-            <div class="container">
-                <img src="../images/Teddy Bear Cover.png" alt="teddy_bear_render">
-                <div class="overlay">
-                    <div class="text">
-                        <h3>Blender Renders</h3>
-                        <em><h5>Interactive Media Projects, 2018</h5></em>
-                        <p>A group of 3D models including a mug, donut, plate, pool balls, and a teddy bear. All the models were designed and rendered using the Blender program and toolset. These designs feature various 3D shapes, colors, and functions.</p>
-                        <a href="../pages/art-work/blender_renders.html"><button>More</button></a>
-                    </div>
-                  </div>
-            </div>
+          </div>
         </div>
+      </div>
+      <div class="col1">
+        <div class="container">
+          <img src="../images/MP Gif.gif" alt="movie_posters_gif" />
+          <div class="overlay">
+            <div class="text">
+              <h3>Investigation Exploration</h3>
+              <em><h5>Movie Poster Project, 2018</h5></em>
+              <p>
+                A series of four different movie posters, made using Adobe
+                Illustrator, depicting the same fictional movie, Investigation
+                Exploration. Investigation Exploration is supposed to be an
+                action movie of three sisters moving to the streets of Egypt for
+                the summer to find happiness and passion. Each movie poster was
+                made with a different aspect of the movie in mind and each has
+                its own voice.
+              </p>
+              <a href="../pages/art-work/movie_posters.html"
+                ><button>More</button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <img src="../images/Screen Cap.png" alt="bubble_bobble_start" />
+          <div class="overlay">
+            <div class="text">
+              <h3>Bubble Bobble</h3>
+              <em><h5>Stop Motion Animation, 2018</h5></em>
+              <p>
+                A stop motion animation of the iconic Bubble Bobble game. All of
+                the graphics were printed out and placed on a board. The video
+                features 362 different images, which were edited and sequenced
+                in Adobe After Effects.
+              </p>
+              <a href="../pages/art-work/bubble_bobble.html"
+                ><button>More</button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <img src="../images/logotypes.png" alt="logotypes_project" />
+          <div class="overlay">
+            <div class="text">
+              <h3>Maralumi Chocolate</h3>
+              <em><h5>Typography Logotypes Project, 2021</h5></em>
+              <p>
+                A unique logotype of a chosen word crafted using typography
+                principles. Through research, semiotic nuances of the word were
+                identified and given a visual voice. Topics considered during
+                the logotype development include type characters, letterform,
+                style, texture, weight, emotional tone, etc.
+              </p>
+              <a href="../images/Project 1 Process Document.pdf"
+                ><button>More</button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <img src="../images/Cover Design 3.png" alt="cover_design" />
+          <div class="overlay">
+            <div class="text">
+              <h3>Percy Jackson</h3>
+              <em><h5>Novel Cover Designs, 2021</h5></em>
+              <p>
+                Three different cover designs of "Percy Jackson and the Last
+                Olympian", a novel by Rick Riordan. Each design was created in
+                Illustrator using various tools such as gradient, curvature, and
+                shape builder tool.
+              </p>
+              <a href="../pages/art-work/cover_designs.html"
+                ><button>More</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col1">
+        <div class="container">
+          <img src="../images/4Logos.png" alt="fictional_logos" />
+          <div class="overlay">
+            <div class="text">
+              <h3>Fictional Company Logos</h3>
+              <em><h5>Logo Making Project, 2018</h5></em>
+              <p>
+                A collection of four different company logos. North Beacon,
+                Forward Thinking, and Side Slice are all fictitious companies
+                created for the purpose of portraying a company persona through
+                a logo. Each of these logos were made with Adobe Illustrator
+                using various negative space and coloring techniques.
+              </p>
+              <a href="../pages/art-work/fictional_logos.html"
+                ><button>More</button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <img
+            src="../images/Julie Tadrous - Advertisement Project 2.jpg"
+            alt="wine_advertisement_project"
+          />
+          <div class="overlay">
+            <div class="text">
+              <h3>Digital Media Imagery</h3>
+              <em><h5>Digital Media Projects, 2021</h5></em>
+              <p>
+                A series of projects created in Adobe Photoshop and Illustrator
+                for the Digital Media Imagery course offered at SoIC. The clever
+                product image for a fictional wine company depicting flowers
+                growing from a wine bottle was created for the advertisement
+                project. The digital eye painting was created using various
+                painting tools within Photoshop.
+              </p>
+              <a href="../pages/art-work/digital_media.html"
+                ><button>More</button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <img src="../images/Teddy Bear Cover.png" alt="teddy_bear_render" />
+          <div class="overlay">
+            <div class="text">
+              <h3>Blender Renders</h3>
+              <em><h5>Interactive Media Projects, 2018</h5></em>
+              <p>
+                A group of 3D models including a mug, donut, plate, pool balls,
+                and a teddy bear. All the models were designed and rendered
+                using the Blender program and toolset. These designs feature
+                various 3D shapes, colors, and functions.
+              </p>
+              <a href="../pages/art-work/blender_renders.html"
+                ><button>More</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <br/><br/><br/>
+    <br /><br /><br />
     <footer>
-        <h2>© 2021 by Julie Tadrous.</h2>
+      <h2>© 2021 by Julie Tadrous.</h2>
     </footer>
-</body>
+  </body>
 </html>
