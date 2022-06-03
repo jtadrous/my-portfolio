@@ -172,6 +172,7 @@ nav .dropdown {
   max-width: 100%;
   min-height: 400px;
   margin-left: 10px;
+  margin-bottom: 50px;
   font-size: 25px;
   padding: 50px;
   text-align: left;
@@ -191,7 +192,7 @@ nav .dropdown {
 }
 .home .row1 .left1 img {
   max-width: 500px;
-  padding: 30px;
+  padding: 0 30px;
 }
 .home img {
   width: 100%;
@@ -235,8 +236,8 @@ nav .dropdown {
   }
   .home .row1 .right1 .box {
     width: 90%;
-    margin: 0 auto;
-    font-size: 16px;
+    margin: 30px auto;
+    font-size: 18px;
     padding: 20px;
     min-height: 0;
   }
@@ -245,12 +246,11 @@ nav .dropdown {
   }
   .home .row1 .left1 {
     width: 100%;
+    padding: 30px;
   }
   .home .row1 .left1 .img {
     width: 90%;
     height: auto;
-    padding-top: 20px;
-    margin: 0 auto;
   }
   .home img {
     width: 90%;
