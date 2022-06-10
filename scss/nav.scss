@@ -94,7 +94,7 @@ nav {
     h1 {
       width: 90%;
       font-size: 30px;
-      padding: 40px 30px 30px 30px;
+      padding: 25px 30px 30px 30px;
     }
 
     .links {
@@ -103,8 +103,8 @@ nav {
     }
 
     a.current {
-      background-color: $peach;
-      border-bottom: 5px solid $peach-border;
+      background-color: #afd3bf;
+      //border-bottom: 5px solid $peach-border;
       border-right: none;
       border-left: none;
       border-radius: 0px;
@@ -118,13 +118,13 @@ nav {
       display: inline-block;
 
       .dropbtn {
-        background-color: $white;
+        background-color: #dceae2;
         padding: 30px;
         font-size: 16px;
-        border-right: 1px solid $white;
-        border-top: 5px solid $gray-border;
-        border-bottom: 5px solid $gray-border;
-        border-left: 5px solid $gray-border;
+        border-right: 1px solid #dceae2;
+        border-top: 3px solid #0068bd;
+        border-bottom: 3px solid #0068bd;
+        border-left: 3px solid #0068bd;
         border-bottom-left-radius: 10px;
         border-top-left-radius: 10px;
         cursor: pointer;
@@ -134,6 +134,7 @@ nav {
         display: none;
         position: absolute;
         background-color: $white;
+        height: 100vh;
         min-width: 160px;
         overflow: auto;
         box-shadow: 0px 8px 16px 0px $overlay-black;

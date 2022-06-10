@@ -199,7 +199,40 @@
       }
     }
 
-    img {
+    .contact-me {
+      flex-direction: column;
+
+      .my-links,
+      .filler {
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      .my-links {
+        margin-bottom: 40px;
+
+        a {
+          font-size: 13px;
+        }
+
+        .icons {
+          .icon-box {
+            transition: none;
+
+            img {
+              width: 35px;
+              height: 35px;
+            }
+          }
+
+          .icon-box:hover {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+
+    /* img {
       width: 90%;
       padding: 10px;
     }
@@ -218,6 +251,6 @@
         min-width: 90%;
         height: auto;
       }
-    }
+    } */
   }
 }

@@ -122,15 +122,14 @@ nav .dropdown {
   nav h1 {
     width: 90%;
     font-size: 30px;
-    padding: 40px 30px 30px 30px;
+    padding: 25px 30px 30px 30px;
   }
   nav .links {
     display: none;
     width: 10%;
   }
   nav a.current {
-    background-color: #e5d8cc;
-    border-bottom: 5px solid #d3c7bd;
+    background-color: #afd3bf;
     border-right: none;
     border-left: none;
     border-radius: 0px;
@@ -143,13 +142,13 @@ nav .dropdown {
     display: inline-block;
   }
   nav .dropdown .dropbtn {
-    background-color: #f5f7f7;
+    background-color: #dceae2;
     padding: 30px;
     font-size: 16px;
-    border-right: 1px solid #f5f7f7;
-    border-top: 5px solid #d6d6d6;
-    border-bottom: 5px solid #d6d6d6;
-    border-left: 5px solid #d6d6d6;
+    border-right: 1px solid #dceae2;
+    border-top: 3px solid #0068bd;
+    border-bottom: 3px solid #0068bd;
+    border-left: 3px solid #0068bd;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
     cursor: pointer;
@@ -158,6 +157,7 @@ nav .dropdown {
     display: none;
     position: absolute;
     background-color: #f5f7f7;
+    height: 100vh;
     min-width: 160px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
@@ -319,6 +319,26 @@ nav .dropdown {
   .home {
     width: 85%;
     flex-direction: column;
+    /* img {
+      width: 90%;
+      padding: 10px;
+    }
+
+    .row2 {
+      width: 100%;
+      margin: 0 auto;
+      flex-direction: column;
+      padding: 0 20px 20px 20px;
+
+      figure {
+        //background-color: brown;
+        cursor: pointer;
+        margin: 0 auto;
+        width: 100%;
+        min-width: 90%;
+        height: auto;
+      }
+    } */
   }
   .home .row1 {
     flex-direction: column;
@@ -345,22 +365,29 @@ nav .dropdown {
     width: 90%;
     height: auto;
   }
-  .home img {
-    width: 90%;
-    padding: 10px;
-  }
-  .home .row2 {
-    width: 100%;
-    margin: 0 auto;
+  .home .contact-me {
     flex-direction: column;
-    padding: 0 20px 20px 20px;
   }
-  .home .row2 figure {
-    cursor: pointer;
+  .home .contact-me .my-links,
+.home .contact-me .filler {
+    width: 90%;
     margin: 0 auto;
-    width: 100%;
-    min-width: 90%;
-    height: auto;
+  }
+  .home .contact-me .my-links {
+    margin-bottom: 40px;
+  }
+  .home .contact-me .my-links a {
+    font-size: 13px;
+  }
+  .home .contact-me .my-links .icons .icon-box {
+    transition: none;
+  }
+  .home .contact-me .my-links .icons .icon-box img {
+    width: 35px;
+    height: 35px;
+  }
+  .home .contact-me .my-links .icons .icon-box:hover {
+    padding-left: 0;
   }
 }
 /* styling for the about/bio page */
