@@ -618,6 +618,8 @@ footer {
   margin: auto;
   text-align: center;
   padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 /* styling for all design-work and art-work pages */
