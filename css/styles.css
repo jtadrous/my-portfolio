@@ -1,4 +1,5 @@
 /* variables are used for efficiency, only have to change values in once central place */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 /* has to be imported first so other files can see it */
 /* basic css reset for the page */
 * {
@@ -9,8 +10,17 @@
 
 html,
 body {
+  width: 100%;
   height: 100%;
-  background-color: #e5e4cc;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-color: #dceae2;
+  font-family: "Roboto", sans-serif;
+}
+
+html::-webkit-scrollbar {
+  display: none;
 }
 
 h1,
@@ -26,36 +36,35 @@ p {
 /* styling for the navigation bar */
 nav {
   width: 100%;
-  height: 90px;
+  height: 80px;
   top: 0;
   /* hard set to position the nav bar at the top no matter what */
   position: fixed;
   display: flex;
   align-items: center;
-  background-color: #e5e4cc;
-  border-bottom: 5px solid #d4d2aa;
+  background-color: #dceae2;
   z-index: 5;
-  box-shadow: 5px 0px 15px 0px rgba(0, 0, 0, 0.4);
 }
 nav .logo {
-  margin-left: 30px;
+  margin-left: 5%;
 }
 nav .logo img {
-  width: 60px;
-  height: 70px;
+  width: 50px;
+  height: 60px;
 }
 nav h1 {
   width: 40%;
   height: 100%;
-  font-size: 40px;
-  padding: 30px 30px 30px 10px;
+  font-size: 35px;
+  padding: 25px 30px 30px 10px;
   color: #19181a;
+  font-family: Tahoma;
 }
 nav .links {
   width: 60%;
   line-height: 40px;
-  font-size: 20px;
-  font-weight: bolder;
+  font-size: 18px;
+  font-weight: 600;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -63,20 +72,37 @@ nav .links {
   align-items: center;
   /* centers the text links */
   height: 100%;
+  letter-spacing: 1px;
 }
 nav .links a {
   color: #19181a;
   text-decoration: none;
+  transition: font-size 0.3s;
+}
+nav .links a:hover {
+  color: #0068bd;
+  font-size: 22px;
+}
+nav .links .resume {
+  border: solid 2px #0068bd;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+nav .links .resume:hover {
+  background-color: #0068bd;
+  color: #f5f7f7;
+  font-size: 18px;
 }
 nav a.current {
-  height: 95px;
+  color: #0068bd;
+  /* height: 95px;
   width: 175px;
-  background-color: #f5f7f7;
-  border-left: 5px solid #d6d6d6;
-  border-right: 5px solid #d6d6d6;
-  border-bottom: 5px solid #d6d6d6;
+  background-color: $white;
+  border-left: 5px solid $gray-border;
+  border-right: 5px solid $gray-border;
+  border-bottom: 5px solid $gray-border;
   border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,7 +118,7 @@ nav .dropdown {
   nav h1 {
     width: 90%;
     font-size: 30px;
-    padding: 30px;
+    padding: 40px 30px 30px 30px;
   }
   nav .links {
     display: none;

@@ -7,9 +7,17 @@
 
 html,
 body {
+  width: 100%;
   height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-color: $background;
   font-family: "Roboto", sans-serif;
+}
+
+html::-webkit-scrollbar {
+  display: none;
 }
 
 h1,

@@ -1,58 +1,81 @@
 /* styling for the navigation bar */
 nav {
   width: 100%;
-  height: 90px;
+  height: 80px;
   top: 0; /* hard set to position the nav bar at the top no matter what */
   position: fixed;
   display: flex;
   align-items: center;
   background-color: $background;
-  border-bottom: 5px solid $nav-border;
+  //border-bottom: 5px solid $nav-border;
+  //border-bottom: 2px solid #0068bd; //#afd3bf;
   z-index: 5;
-  box-shadow: 5px 0px 15px 0px $overlay-black;
+  //box-shadow: 3px 0px 6px 0px $overlay-black;
 
   .logo {
-    margin-left: 30px;
+    margin-left: 5%;
+
     img {
-      width: 60px;
-      height: 70px;
-    } 
+      width: 50px;
+      height: 60px;
+    }
   }
 
   h1 {
     width: 40%;
     height: 100%;
-    font-size: 40px;
-    padding: 30px 30px 30px 10px;
+    font-size: 35px;
+    padding: 25px 30px 30px 10px;
     color: $black;
+    font-family: Tahoma;
   }
 
   .links {
     width: 60%;
     line-height: 40px;
-    font-size: 20px;
-    font-weight: bolder;
+    font-size: 18px;
+    font-weight: 600;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly; /* adds space between links vertically */
     align-items: center; /* centers the text links */
     height: 100%;
+    letter-spacing: 1px;
 
     a {
       color: $black;
       text-decoration: none;
+      transition: font-size 0.3s;
+    }
+
+    a:hover {
+      color: #0068bd;
+      font-size: 22px;
+    }
+
+    .resume {
+      border: solid 2px #0068bd;
+      border-radius: 10px;
+      padding: 0 10px;
+    }
+
+    .resume:hover {
+      background-color: #0068bd;
+      color: $white;
+      font-size: 18px;
     }
   }
 
   a.current {
-    height: 95px;
+    color: #0068bd;
+    /* height: 95px;
     width: 175px;
     background-color: $white;
     border-left: 5px solid $gray-border;
     border-right: 5px solid $gray-border;
     border-bottom: 5px solid $gray-border;
     border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 10px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,7 +94,7 @@ nav {
     h1 {
       width: 90%;
       font-size: 30px;
-      padding: 30px;
+      padding: 40px 30px 30px 30px;
     }
 
     .links {
