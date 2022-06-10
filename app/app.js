@@ -26,4 +26,3 @@ window.addEventListener("scroll", function () {
   let header = this.document.querySelector("nav");
   header.classList.toggle("scrolling-active", window.scrollY > 54);
 });
-aos.init();

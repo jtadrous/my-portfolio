@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bio - Julie Tadrous</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
     <link rel="stylesheet" href="../css/styles.css">
     <script src="../app/app.js"></script>
 </head>
@@ -18,7 +19,13 @@
             <a href="bio.html" class="current">Bio</a>
             <a href="design.html">Design</a>
             <a href="artwork.html">Artwork</a>
-            <a href="contact.html" class="resume">Resume</a>
+            <a href="pages/contact.html">Contact</a>
+            <a
+            href="../images/Julie_Tadrous_GitHub_Resume_2022.pdf"
+            download
+            class="resume"
+            >Resume</a
+            >
         </div>
         <!--Code similar to tutorial at https://www.w3schools.com/howto/howto_js_dropdown.asp-->
         <div class="dropdown">
@@ -33,10 +40,10 @@
         </div>
     </nav>
     <section class="bio">
-        <div class="top">
+        <div class="top" data-aos="fade-up" aos-init aos-animate>
             <div class="left1">
                 <h2>Julie Tadrous</h2>
-                <h5><em>Aspiring Web Designer based in Indianapolis</em></h5>
+                <h5><em>Aspiring Web Developer based in Indianapolis</em></h5>
                 <br>
                 <p>Julie is a dependable and hard-working designer with training in HTML, CSS, SCSS, JavaScript, and Vue.js. With a record of academic and extracurricular success, she has completed many web-based projects and design works. She has also built strong communication, time management, and teamwork skills working with various students and coworkers. In her free time, she loves to paint, draw, and read novels. She hopes to pursue a career in Web Design and Development in her future.</p>
             </div>
@@ -46,19 +53,19 @@
         </div>
         <hr>
         <div class="bottom">
-                <div class="level">
+                <div class="level" data-aos="fade-up" aos-init aos-animate>
                     <h4>Education</h4>
                     <p>Julie graduated from Indiana University - Purdue University Indianapolis in May 2022. She received a double major in Informatics B.S. and Media Arts and Science B.S. and maintained a cumulative 4.0 GPA. She also has completed a specialization in Web Design & Development and a Studio Art & Technology Minor.</p>
                 </div>
-                <div class="level">
+                <div class="level" data-aos="fade-up" aos-init aos-animate>
                     <h4>Experience</h4>
                     <p>Julie has applicable experience within the IT field, from final course projects focused on developing web-based solutions to everyday problems to working as an ADA Website Compliance Intern for REN-ISAC. In her internship, she collaborated with her team to design appealing and user-friendly web pages for the REN-ISAC site, and analyzed online and written content for ADA Compliance. She has also completed an internship with Navient where she supported the Web Strategies team in developing their user-friendly, public websites. Previously, she worked as a tutor for the School of Informatics and Computing, teaching mathematics, including Finite and Logic. </p>
                 </div>
-                <div class="level">
+                <div class="level" data-aos="fade-up" aos-init aos-animate>
                     <h4>Skills</h4>
                     <p>From these experiences, Julie has gained a combination of time management, organization, and teamwork skills. She has also taken multiple college courses to learn programming languages and frameworks such as HTML, CSS, SCSS, JavaScript, and Vue.js. For her design work, she has utilized various Adobe programs including Illustrator, XD, and Photoshop.</p>
                 </div>
-                <div class="level">
+                <div class="level" data-aos="fade-up" aos-init aos-animate>
                     <h4>Awards + Certificates</h4>
                     <div>
                         <b>April 2022</b>
@@ -100,5 +107,13 @@
     <footer>
         <h2>© 2022 by Julie Tadrous.</h2>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 500,
+            delay: 50
+        });
+    </script>
 </body>
 </html>

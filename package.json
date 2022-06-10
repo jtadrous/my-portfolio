@@ -1,0 +1,22 @@
+{
+  "name": "my-portfolio",
+  "description": "Live Link: https://jtadrous.github.io/my-portfolio/index.html",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtadrous/my-portfolio.git"
+  },
+  "author": "Julie Tadrous",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jtadrous/my-portfolio/issues"
+  },
+  "homepage": "https://github.com/jtadrous/my-portfolio#readme"
+}

@@ -33,6 +33,10 @@ p {
   margin-bottom: 16px;
 }
 
+.scrolling-active {
+  box-shadow: 3px 0px 6px 0px rgba(0, 0, 0, 0.4);
+}
+
 /* styling for the navigation bar */
 nav {
   width: 100%;
@@ -46,7 +50,7 @@ nav {
   z-index: 5;
 }
 nav .logo {
-  margin-left: 5%;
+  margin-left: 4%;
 }
 nav .logo img {
   width: 50px;
@@ -177,9 +181,9 @@ nav .dropdown {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  width: 85%;
+  width: 90%;
   background-color: #f5f7f7;
-  border: #d6d6d6 solid 5px;
+  border: #0068bd solid 2px;
   border-radius: 20px;
 }
 .home .row1 {
@@ -194,7 +198,7 @@ nav .dropdown {
   text-align: center;
 }
 .home .row1 .right1 .box {
-  background-color: #e5d8cc;
+  background-color: #afd3bf;
   max-width: 100%;
   min-height: 400px;
   margin-left: 10px;
@@ -298,13 +302,13 @@ nav .dropdown {
 }
 /* styling for the about/bio page */
 .bio {
-  width: 85%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   background-color: #f5f7f7;
   justify-content: center;
   margin: 135px auto auto auto;
-  border: #d6d6d6 solid 5px;
+  border: #0068bd solid 2px;
   border-radius: 20px;
   font-size: 20px;
 }
@@ -331,13 +335,13 @@ nav .dropdown {
 .bio .top .right1 img {
   display: block;
   max-height: 250px;
-  border: 10px #e5d8cc solid;
+  border: 8px solid #afd3bf;
   margin: 0 auto;
   max-width: 90%;
   align-items: center;
 }
 .bio hr {
-  border-top: 5px solid #d6d6d6;
+  border-top: 5px solid #afd3bf;
   border-radius: 30px;
   border-left: none;
   border-bottom: none;

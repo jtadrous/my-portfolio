@@ -1,14 +1,16 @@
 /* styling for the about/bio page */
 .bio {
-  width: 85%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   background-color: $white;
   justify-content: center;
   margin: 135px auto auto auto;
-  border: $gray-border solid 5px;
+  //border: $gray-border solid 5px;
+  border: #0068bd solid 2px;
   border-radius: 20px;
   font-size: 20px;
+  //box-shadow: 1px 1px 5px 1px $overlay-black;
 
   .top {
     display: flex;
@@ -34,7 +36,8 @@
       img {
         display: block;
         max-height: 250px;
-        border: 10px $peach solid;
+        //border: 10px $peach solid;
+        border: 8px solid #afd3bf;
         margin: 0 auto;
         max-width: 90%;
         align-items: center;
@@ -43,7 +46,7 @@
   }
 
   hr {
-    border-top: 5px solid $gray-border;
+    border-top: 5px solid #afd3bf;
     border-radius: 30px;
     border-left: none;
     border-bottom: none;
