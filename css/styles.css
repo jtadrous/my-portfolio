@@ -22,6 +22,7 @@ body {
   -o-background-size: cover;
   background-color: #dceae2;
   font-family: "Roboto", sans-serif;
+  color: #19181a;
 }
 
 html::-webkit-scrollbar {
