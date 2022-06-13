@@ -1,6 +1,6 @@
 /* styling for the contact page, not in use atm */
 .contact {
-  width: 85%;
+  width: 90%;
   display: flex;
   background-color: $white;
   justify-content: center;
@@ -74,7 +74,7 @@
       #submit {
         background-color: $black;
         border-radius: 10px;
-        color: white;
+        color: $white;
         padding: 15px 25px;
         border: none;
         cursor: pointer;

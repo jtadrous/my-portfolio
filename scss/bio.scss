@@ -6,11 +6,9 @@
   background-color: $white;
   justify-content: center;
   margin: 135px auto auto auto;
-  //border: $gray-border solid 5px;
   border: $color3 solid 2px;
   border-radius: 20px;
   font-size: 20px;
-  //box-shadow: 1px 1px 5px 1px $overlay-black;
 
   .top {
     display: flex;
@@ -36,7 +34,6 @@
       img {
         display: block;
         max-height: 250px;
-        //border: 10px $peach solid;
         border: 8px solid $color2;
         margin: 0 auto;
         max-width: 90%;

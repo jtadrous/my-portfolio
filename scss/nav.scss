@@ -7,10 +7,7 @@ nav {
   display: flex;
   align-items: center;
   background-color: $color1;
-  //border-bottom: 5px solid $nav-border;
-  //border-bottom: 2px solid #0068bd; //#afd3bf;
   z-index: 5;
-  //box-shadow: 3px 0px 6px 0px $overlay-black;
 
   .logo {
     margin-left: 4%;
@@ -68,14 +65,6 @@ nav {
 
   a.current {
     color: $color3;
-    /* height: 95px;
-    width: 175px;
-    background-color: $white;
-    border-left: 5px solid $gray-border;
-    border-right: 5px solid $gray-border;
-    border-bottom: 5px solid $gray-border;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,7 +93,6 @@ nav {
 
     a.current {
       background-color: $color2;
-      //border-bottom: 5px solid $peach-border;
       border-right: none;
       border-left: none;
       border-radius: 0px;
