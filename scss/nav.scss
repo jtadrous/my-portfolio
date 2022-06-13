@@ -6,7 +6,7 @@ nav {
   position: fixed;
   display: flex;
   align-items: center;
-  background-color: $background;
+  background-color: $color1;
   //border-bottom: 5px solid $nav-border;
   //border-bottom: 2px solid #0068bd; //#afd3bf;
   z-index: 5;
@@ -49,25 +49,25 @@ nav {
     }
 
     a:hover {
-      color: #0068bd;
+      color: $color3;
       font-size: 22px;
     }
 
     .resume {
-      border: solid 2px #0068bd;
+      border: solid 2px $color3;
       border-radius: 10px;
       padding: 0 10px;
     }
 
     .resume:hover {
-      background-color: #0068bd;
+      background-color: $color3;
       color: $white;
       font-size: 18px;
     }
   }
 
   a.current {
-    color: #0068bd;
+    color: $color3;
     /* height: 95px;
     width: 175px;
     background-color: $white;
@@ -103,7 +103,7 @@ nav {
     }
 
     a.current {
-      background-color: #afd3bf;
+      background-color: $color2;
       //border-bottom: 5px solid $peach-border;
       border-right: none;
       border-left: none;
@@ -118,13 +118,13 @@ nav {
       display: inline-block;
 
       .dropbtn {
-        background-color: #dceae2;
+        background-color: $color1;
         padding: 30px;
         font-size: 16px;
-        border-right: 1px solid #dceae2;
-        border-top: 3px solid #0068bd;
-        border-bottom: 3px solid #0068bd;
-        border-left: 3px solid #0068bd;
+        border-right: 1px solid $color1;
+        border-top: 3px solid $color3;
+        border-bottom: 3px solid $color3;
+        border-left: 3px solid $color3;
         border-bottom-left-radius: 10px;
         border-top-left-radius: 10px;
         cursor: pointer;

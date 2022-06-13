@@ -7,7 +7,7 @@
   text-align: center;
   width: 90%;
   background-color: $white;
-  border: #0068bd solid 2px;
+  border: $color3 solid 2px;
   border-radius: 20px;
 
   .row1 {
@@ -24,7 +24,7 @@
       //align-content: right;
 
       .box {
-        background-color: #afd3bf;
+        background-color: $color2;
         width: 100%;
         min-height: 450px;
         //margin-left: 10px;
@@ -63,7 +63,7 @@
   }
 
   hr {
-    border-top: 5px solid #afd3bf;
+    border-top: 5px solid $color2;
     border-radius: 30px;
     border-left: none;
     border-bottom: none;

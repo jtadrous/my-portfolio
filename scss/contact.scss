@@ -1,11 +1,11 @@
-/* styling for the contact page */
+/* styling for the contact page, not in use atm */
 .contact {
   width: 85%;
   display: flex;
   background-color: $white;
   justify-content: center;
   margin: 135px auto auto auto;
-  border: $gray-border solid 5px;
+  border: $color3 solid 2px;
   border-radius: 20px;
   font-size: 23px;
 
@@ -38,7 +38,7 @@
   }
 
   .right2 {
-    background-color: $peach;
+    background-color: $color2;
     width: 60%;
     margin: 50px;
     justify-content: center;
