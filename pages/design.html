@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Design - Julie Tadrous</title>
     <link rel="stylesheet" href="../css/styles.css" />
-    <script src="../app/app.js"></script>
   </head>
   <body>
     <nav>
@@ -32,7 +31,7 @@
       </div>
       <!--Code similar to tutorial at https://www.w3schools.com/howto/howto_js_dropdown.asp-->
       <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">Menu</button>
+        <button class="dropbtn">Menu</button>
         <div id="myDropdown" class="dropdown-content">
           <a href="../index.html">Home</a>
           <a href="bio.html">Bio</a>
@@ -48,203 +47,120 @@
         </div>
       </div>
     </nav>
+
     <section class="design">
-      <div class="col1">
-        <div class="container">
+      <div class="dock">
+        <h2>Design Projects</h2>
+        <p>
+          Select any image in the gallery below to read more about the project!
+        </p>
+        <br />
+        <hr />
+        <div id="selected">
           <img src="../images/keurig-website.png" alt="keurig-website" />
-          <div class="overlay">
-            <div class="text">
-              <h3>Keurig Website Re-creation</h3>
-              <em><h5>N315 Final Project, 2021</h5></em>
-              <p>
-                A re-creation of the Keurig e-commerce site that sells coffee
-                makers and allows users to sign up with their first name, last
-                name, email, and password. They can also login and logout easily
-                based on user feedback. Once a user is logged in, they are able
-                to add multiple items to their cart, remove items from their
-                cart, and checkout. This application is fully responsive and
-                uses various tools such as Firebase.
-              </p>
-              <a href="https://n315-jt-fa21.web.app/"><button>More</button></a>
-            </div>
+          <div class="info">
+            <h3>Keurig Website Re-creation</h3>
+            <em><h4>N315 Final Project, 2021</h4></em><br />
+            <p>
+              A re-creation of the Keurig e-commerce site that sells coffee
+              makers and allows users to sign up with their first name, last
+              name, email, and password. They can also login and logout easily
+              based on user feedback. Once a user is logged in, they are able to
+              add multiple items to their cart, remove items from their cart,
+              and checkout. This application is fully responsive and uses
+              various tools such as Firebase.
+            </p>
+            <br />
+            <a href="https://n315-jt-fa21.web.app/"><button>View</button></a>
           </div>
         </div>
-        <div class="container">
-          <img src="../images/App Gif.gif" alt="professor's_wheel_gif" />
-          <div class="overlay">
-            <div class="text">
-              <h3>Professor's Wheel</h3>
-              <em><h5>Trivia App Project, 2018</h5></em>
-              <p>
-                A full web application created using HTML, CSS, and JavaScript.
-                For high school and college students who have lower test scores
-                and graduation rates, Professor's Wheel is a trivia app and
-                learning activity that will make learning more interactive and
-                fun. It features a spinning category wheel, in-app audio and
-                buzzers, a timer, and a counter point system.
-              </p>
-              <a href="../pages/design-work/Trivia App/index.html"
-                ><button>More</button></a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <img src="../images/Jams 2.png" alt="global_jams_inventory_page" />
-          <div class="overlay">
-            <div class="text">
-              <h3>Global Jams</h3>
-              <em><h5>PHP Web Application, 2019</h5></em>
-              <p>
-                A full database-driven Web Application developed with PHP and
-                MySQL. Global Jams is a website that provides users with a taste
-                of the top 2019 albums from countries around the world. The site
-                features an inventory database, a login page, a search bar, and
-                a working shopping cart. There are also admin features such as
-                adding, deleting, and editing albums in the inventory.
-              </p>
-              <a href="../pages/design-work/global_jams.html"
-                ><button>More</button></a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <img src="../images/tic-tac-toe.png" alt="tic_tac_toe" />
-          <div class="overlay">
-            <div class="text">
-              <h3>Tic Tac Toe</h3>
-              <em><h5>Board Game Project, 2020</h5></em>
-              <p>
-                A full web application created using HTML, CSS, and JavaScript.
-                In this game, players alternate placing Xs and Os on the game
-                board until either oppent has three in a row or all nine squares
-                are filled. It features greensock animations, SVG's, several
-                classes, and a counter-point system.
-              </p>
-              <a href="../pages/design-work/Tic Tac Toe/index.html"
-                ><button>More</button></a
-              >
-            </div>
-          </div>
-        </div>
+        <hr />
       </div>
-      <div class="col1">
-        <div class="container">
-          <img src="../images/arabee-website.png" alt="arabee-website" />
-          <div class="overlay">
-            <div class="text">
-              <h3>AraBee Language Program</h3>
-              <em><h5>N423 Final Project, 2021</h5></em>
-              <p>
-                This application is built as a program to help students learn
-                the language of Arabic. Anyone can create an account to this
-                page using thier first and last name, email, and a password. A
-                user is able to browse the culture, tutorials, and view their
-                own flashcards. Once signed in, a user is able to create, read,
-                update, and delete their flashcards freely. In general, this is
-                a user friendly and bright website to encourage students while
-                learning. It was designed in Adobe XD and built using Firebase.
-              </p>
-              <a href="https://n423-jt-fa21.web.app/"><button>More</button></a>
-            </div>
+      <div class="gallery">
+        <div class="gallery-col">
+          <div class="container">
+            <img
+              src="../images/keurig-website.png"
+              alt="Keurig Website Re-creation"
+              id="1"
+              class="des"
+            />
+          </div>
+          <div class="container">
+            <img
+              src="../images/App Gif.gif"
+              alt="Professor's Wheel"
+              id="2"
+              class="des"
+            />
+          </div>
+          <div class="container">
+            <img
+              src="../images/Jams 2.png"
+              alt="Global Jams"
+              id="3"
+              class="des"
+            />
+          </div>
+          <div class="container">
+            <img
+              src="../images/tic-tac-toe.png"
+              alt="Tic Tac Toe"
+              id="4"
+              class="des"
+            />
           </div>
         </div>
-        <div class="container">
-          <img src="../images/Bayside 1.png" alt="bayside_beat_home_page" />
-          <div class="overlay">
-            <div class="text">
-              <h3>Bayside Beat</h3>
-              <em><h5>Blog/Journal Website, 2018</h5></em>
-              <p>
-                A full website created using HTML, CSS, and JavaScript. Bayside
-                Beat is a blog website about the local food and recreational
-                places to visit in the Bay area. It features images, reviews,
-                and a column section.
-              </p>
-              <a href="../pages/design-work/Bayside/index.html"
-                ><button>More</button></a
-              >
-            </div>
+        <div class="gallery-col">
+          <div class="container">
+            <img
+              src="../images/arabee-website.png"
+              alt="AraBee Language Program"
+              id="5"
+              class="des"
+            />
+          </div>
+          <div class="container">
+            <img
+              src="../images/Bayside 1.png"
+              alt="Bayside Beat"
+              id="6"
+              class="des"
+            />
+          </div>
+          <div class="container">
+            <img
+              src="../images/skincare.png"
+              alt="Julie's Skincare Store"
+              id="7"
+              class="des"
+            />
           </div>
         </div>
-        <div class="container">
-          <img src="../images/skincare.png" alt="julie's_skincare_store" />
-          <div class="overlay">
-            <div class="text">
-              <h3>Julie's Skincare Store</h3>
-              <em><h5>Vue.js Application, 2020</h5></em>
-              <p>
-                A single-page application created in Codesandbox using primarily
-                Vue.js and Vuex programming. This site showcases several
-                different types of skincare products and their details in an
-                aesthetic display. It features images, json data files, and
-                greensock animations.
-              </p>
-              <a href="https://2p1y0.csb.app/"><button>More</button></a>
-            </div>
+        <div class="gallery-col">
+          <div class="container">
+            <img
+              src="../images/Red Line Gif.gif"
+              alt="Red Line App"
+              id="8"
+              class="des"
+            />
           </div>
-        </div>
-      </div>
-      <div class="col1">
-        <div class="container">
-          <img src="../images/Red Line Gif.gif" alt="red_line_gif" />
-          <div class="overlay">
-            <div class="text">
-              <h3>Red Line App</h3>
-              <em><h5>HCI Final Course Project, 2019</h5></em>
-              <p>
-                A wireframe of an application using Mockflow.com. The Red Line
-                is a new bus system that runs from downtown Indy to the
-                University of Indianapolis. This fictional app was designed to
-                enhance the user experience, allow them to search points of
-                interests, and buy tickets. It features a map, search bar, info
-                cards with star reviews, and multiple payment methods.
-              </p>
-              <a href="../pages/design-work/redline.html"
-                ><button>More</button></a
-              >
-            </div>
+          <div class="container">
+            <img
+              src="../images/PoS 3.png"
+              alt="Plan of Study"
+              id="9"
+              class="des"
+            />
           </div>
-        </div>
-        <div class="container">
-          <img src="../images/PoS 3.png" alt="plan_of_study_site" />
-          <div class="overlay">
-            <div class="text">
-              <h3>Plan of Study</h3>
-              <em><h5>HTML5 Drag-and-Drop Application, 2018</h5></em>
-              <p>
-                A web application created using HTML, CSS, and JavaScript. The
-                Personalized Plan of Study is a website that allows Informatics
-                students to pick and choose between courses and visually plan
-                out their fours years of college. It features course boxes,
-                color-coded categories, text input boxes, and HTML5
-                Drag-and-Drop. It also has 'Save', 'Reset', and 'Print' buttons
-                at the bottom of the page.
-              </p>
-              <a href="../pages/design-work/Scheduler/index.html"
-                ><button>More</button></a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <img src="../images/breakout.png" alt="breakout_game" />
-          <div class="overlay">
-            <div class="text">
-              <h3>Breakout Game</h3>
-              <em><h5>Intermediate Media Final Project, 2019</h5></em>
-              <p>
-                A full web game created using p5 and JavaScript. In this game,
-                players use the left and right keyboard keys to move a paddle in
-                the right place for a moving ball to bounce off of and hit a
-                colored block. Each colored block hit earns them a point. It
-                features various variables, functions, and if/else statements.
-              </p>
-              <a href="../pages/design-work/Breakout/index.html"
-                ><button>More</button></a
-              >
-            </div>
+          <div class="container">
+            <img
+              src="../images/breakout.png"
+              alt="Breakout Game"
+              id="10"
+              class="des"
+            />
           </div>
         </div>
       </div>
@@ -253,5 +169,9 @@
     <footer>
       <p>2022. Designed & Developed by Julie Tadrous.</p>
     </footer>
+
+    <!--my own scripts-->
+    <script src="/lib/jquery-3.6.0.min.js"></script>
+    <script src="/app/app.js"></script>
   </body>
 </html>
