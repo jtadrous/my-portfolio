@@ -1,6 +1,7 @@
 /* styling for the about/bio page */
 .bio {
   width: 90%;
+  max-width: 1500px;
   display: flex;
   flex-direction: column;
   background-color: $white;
