@@ -1,72 +1,124 @@
-/* styling for the design page */
+/* styling for the design page and artwork page */
 .design {
-  width: 100%;
+  width: 90%;
+  max-width: 1500px;
   margin: 40px auto auto auto;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
 
-  .col1 {
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    margin: 30px;
+  .dock {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 90px;
+    text-align: center;
 
-    .container {
-      position: relative;
-      margin-top: 70px;
-      box-shadow: 0px 2px 4px 0px $overlay-black;
-      border: $color3 solid 2px;
-      border-radius: 15px;
+    hr {
+      border-top: 5px solid $color2;
+      border-radius: 30px;
+      border-left: none;
+      border-bottom: none;
+    }
+
+    #selected {
+      display: flex;
+      flex-direction: row;
+      text-align: left;
+      justify-content: space-between;
+      padding: 40px 0;
+      width: 100%;
 
       img {
-        width: 100%;
+        box-shadow: 0px 2px 4px 0px $overlay-black;
+        border: $color3 solid 2px;
+        border-radius: 15px;
+        width: 30%;
         height: auto;
-        margin: auto;
-        display: block;
-        border-radius: 13px;
       }
 
-      .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: auto;
-        width: 100%;
-        opacity: 0;
-        transition: 0.5s ease;
-        background-color: $color2;
-        border-radius: 13px;
-      }
+      .info {
+        float: right;
+        width: 60%;
 
-      .text {
-        color: $black;
-        font-size: 16px;
+        p {
+          font-size: 18px;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .gallery-col {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      margin: 0 40px 40px 40px;
+
+      .container {
         position: relative;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        padding: 20px;
-        text-align: center;
+        margin-top: 70px;
+        box-shadow: 0px 2px 4px 0px $overlay-black;
+        border: $color3 solid 2px;
+        border-radius: 15px;
+
+        img {
+          width: 100%;
+          height: auto;
+          margin: auto;
+          display: block;
+          border-radius: 13px;
+          cursor: pointer;
+        }
+
+        /* .overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: auto;
+          width: 100%;
+          opacity: 0;
+          transition: 0.5s ease;
+          background-color: $color2;
+          border-radius: 13px;
+        }
+
+        .text {
+          color: $black;
+          font-size: 16px;
+          position: relative;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          padding: 20px;
+          text-align: center;
+        } */
       }
-    }
 
-    .container:hover .overlay {
-      opacity: 1;
-    }
+      .container:hover {
+        box-shadow: 0px 8px 16px 0px $overlay-black;
+      }
 
-    button {
-      padding: 0 55px 50px 0;
-      background-color: $black;
-      border-radius: 10px;
-      color: $white;
-      padding: 15px 25px;
-      border: none;
-      cursor: pointer;
+      /* .container:hover .overlay {
+        opacity: 1;
+      }
+
+      button {
+        padding: 0 55px 50px 0;
+        background-color: $black;
+        border-radius: 10px;
+        color: $white;
+        padding: 15px 25px;
+        border: none;
+        cursor: pointer;
+      } */
     }
   }
 }
@@ -74,20 +126,40 @@
 @media only screen and (max-width: 980px) {
   .design {
     flex-direction: column;
-    margin: 125px auto auto auto;
+    margin: 50px auto auto auto;
 
-    .col1 {
-      width: 75%;
-      margin: auto;
+    .dock {
+      #selected {
+        flex-direction: column;
 
-      .container {
-        .text {
-          font-size: 12px;
-
-          h2 {
-            font-size: 18px;
-          }
+        img,
+        .info {
+          width: 90%;
+          margin: 0 auto;
         }
+
+        .info {
+          padding-top: 50px;
+        }
+      }
+    }
+
+    .gallery {
+      flex-direction: column;
+
+      .gallery-col {
+        width: 75%;
+        margin: auto;
+
+        /* .container {
+          .text {
+            font-size: 12px;
+
+            h2 {
+              font-size: 18px;
+            }
+          }
+        } */
       }
     }
   }

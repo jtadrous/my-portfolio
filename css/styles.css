@@ -39,6 +39,22 @@ p {
   margin-bottom: 16px;
 }
 
+button {
+  background-color: #f5f7f7;
+  border: solid 2px #0068bd;
+  border-radius: 10px;
+  padding: 15px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0068bd;
+  color: #f5f7f7;
+}
+
 .scrolling-active {
   box-shadow: 3px 0px 6px 0px rgba(0, 0, 0, 0.4);
 }
@@ -54,9 +70,10 @@ nav {
   align-items: center;
   background-color: #dceae2;
   z-index: 5;
+  padding: 0 50px;
 }
 nav .logo {
-  margin-left: 4%;
+  padding-top: 5px;
 }
 nav .logo img {
   width: 50px;
@@ -71,13 +88,13 @@ nav h1 {
   font-family: Tahoma;
 }
 nav .links {
-  width: 60%;
+  width: 55%;
   line-height: 40px;
   font-size: 18px;
   font-weight: 600;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   /* adds space between links vertically */
   align-items: center;
   /* centers the text links */
@@ -95,6 +112,7 @@ nav .links a:hover {
 }
 nav .links .resume {
   border: solid 2px #0068bd;
+  background-color: #f5f7f7;
   border-radius: 10px;
   padding: 0 10px;
 }
@@ -180,6 +198,7 @@ nav .dropdown {
   justify-content: center;
   text-align: center;
   width: 90%;
+  max-width: 1500px;
   background-color: #f5f7f7;
   border: #0068bd solid 2px;
   border-radius: 20px;
@@ -234,18 +253,6 @@ nav .dropdown {
   text-align: left;
   display: flex;
   flex-direction: column;
-}
-.home .row1 .right1 .box button {
-  background-color: #19181a;
-  font-size: 18px;
-  border-radius: 10px;
-  color: #f5f7f7;
-  padding: 15px 25px;
-  border: none;
-  cursor: pointer;
-}
-.home .row1 .right1 .box button:hover {
-  text-decoration: underline;
 }
 .home .row1 .left1 {
   width: 45%;
@@ -390,6 +397,7 @@ nav .dropdown {
 /* styling for the about/bio page */
 .bio {
   width: 90%;
+  max-width: 1500px;
   display: flex;
   flex-direction: column;
   background-color: #f5f7f7;
@@ -717,84 +725,149 @@ nav .dropdown {
     margin: 50px 0;
   }
 }
-/* styling for the design page */
+/* styling for the design page and artwork page */
 .design {
-  width: 100%;
+  width: 90%;
+  max-width: 1500px;
   margin: 40px auto auto auto;
+  display: flex;
+  flex-direction: column;
+}
+.design .dock {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 90px;
+  text-align: center;
+}
+.design .dock hr {
+  border-top: 5px solid #afd3bf;
+  border-radius: 30px;
+  border-left: none;
+  border-bottom: none;
+}
+.design .dock #selected {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  justify-content: space-between;
+  padding: 40px 0;
+  width: 100%;
+}
+.design .dock #selected img {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.4);
+  border: #0068bd solid 2px;
+  border-radius: 15px;
+  width: 30%;
+  height: auto;
+}
+.design .dock #selected .info {
+  float: right;
+  width: 60%;
+}
+.design .dock #selected .info p {
+  font-size: 18px;
+  line-height: 25px;
+}
+.design .gallery {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.design .col1 {
-  width: 25%;
+.design .gallery .gallery-col {
+  width: 30%;
   display: flex;
   flex-direction: column;
-  margin: 30px;
+  margin: 0 40px 40px 40px;
+  /* .container:hover .overlay {
+    opacity: 1;
+  }
+
+  button {
+    padding: 0 55px 50px 0;
+    background-color: $black;
+    border-radius: 10px;
+    color: $white;
+    padding: 15px 25px;
+    border: none;
+    cursor: pointer;
+  } */
 }
-.design .col1 .container {
+.design .gallery .gallery-col .container {
   position: relative;
   margin-top: 70px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.4);
   border: #0068bd solid 2px;
   border-radius: 15px;
+  /* .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: $color2;
+    border-radius: 13px;
+  }
+
+  .text {
+    color: $black;
+    font-size: 16px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+  } */
 }
-.design .col1 .container img {
+.design .gallery .gallery-col .container img {
   width: 100%;
   height: auto;
   margin: auto;
   display: block;
   border-radius: 13px;
-}
-.design .col1 .container .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: auto;
-  width: 100%;
-  opacity: 0;
-  transition: 0.5s ease;
-  background-color: #afd3bf;
-  border-radius: 13px;
-}
-.design .col1 .container .text {
-  color: #19181a;
-  font-size: 16px;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  text-align: center;
-}
-.design .col1 .container:hover .overlay {
-  opacity: 1;
-}
-.design .col1 button {
-  padding: 0 55px 50px 0;
-  background-color: #19181a;
-  border-radius: 10px;
-  color: #f5f7f7;
-  padding: 15px 25px;
-  border: none;
   cursor: pointer;
+}
+.design .gallery .gallery-col .container:hover {
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
 }
 
 @media only screen and (max-width: 980px) {
   .design {
     flex-direction: column;
-    margin: 125px auto auto auto;
+    margin: 50px auto auto auto;
   }
-  .design .col1 {
+  .design .dock #selected {
+    flex-direction: column;
+  }
+  .design .dock #selected img,
+.design .dock #selected .info {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .design .dock #selected .info {
+    padding-top: 50px;
+  }
+  .design .gallery {
+    flex-direction: column;
+  }
+  .design .gallery .gallery-col {
     width: 75%;
     margin: auto;
-  }
-  .design .col1 .container .text {
-    font-size: 12px;
-  }
-  .design .col1 .container .text h2 {
-    font-size: 18px;
+    /* .container {
+      .text {
+        font-size: 12px;
+
+        h2 {
+          font-size: 18px;
+        }
+      }
+    } */
   }
 }
 /* styling for the footer */
