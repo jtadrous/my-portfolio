@@ -2,10 +2,12 @@ var design, art;
 
 function loadData() {
   //jquery way if you have the data in an external json file
-  $.getJSON("../data/data.json", function (projects) {
+  $.getJSON("/data/data.json", function (projects) {
     console.log("working");
     design = projects.design_work;
     art = projects.art_work;
+    console.log(design);
+    console.log(art);
   }).fail(function (jqxhr, textStatus, error) {
     //to check if this works, change the double quotes around one of the keys to single quotes
     //or mess up the file path above
@@ -76,7 +78,8 @@ function initListeners() {
           currPage[i].link +
           `"><button>View Project</button></a></div>`;
         $("#selected").html(content);
-        $(window).scrollTop(120);
+        //$(window).scrollTop(120);
+        $("html, body").animate({ scrollTop: "120" }, 800);
       }
     }
   });
@@ -84,8 +87,8 @@ function initListeners() {
 
 $(document).ready(function () {
   try {
-    initListeners();
     loadData();
+    initListeners();
   } catch {
     console.error(e);
   }
