@@ -74,7 +74,7 @@ function initListeners() {
         <br />
         <a href="` +
           currPage[i].link +
-          `"><button>View</button></a></div>`;
+          `"><button>View Project</button></a></div>`;
         $("#selected").html(content);
         $(window).scrollTop(120);
       }

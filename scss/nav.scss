@@ -8,9 +8,10 @@ nav {
   align-items: center;
   background-color: $color1;
   z-index: 5;
+  padding: 0 50px;
 
   .logo {
-    margin-left: 4%;
+    padding-top: 5px;
 
     img {
       width: 50px;
@@ -28,13 +29,13 @@ nav {
   }
 
   .links {
-    width: 60%;
+    width: 55%;
     line-height: 40px;
     font-size: 18px;
     font-weight: 600;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly; /* adds space between links vertically */
+    justify-content: space-between; /* adds space between links vertically */
     align-items: center; /* centers the text links */
     height: 100%;
     letter-spacing: 1px;
@@ -52,6 +53,7 @@ nav {
 
     .resume {
       border: solid 2px $color3;
+      background-color: $white;
       border-radius: 10px;
       padding: 0 10px;
     }
@@ -79,11 +81,12 @@ nav {
   //Code similar to tutorial at https://www.w3schools.com/howto/howto_js_dropdown.asp
   nav {
     height: 110px;
+    padding: 0 0 0 30px;
 
     h1 {
       width: 90%;
-      font-size: 30px;
-      padding: 25px 30px 30px 30px;
+      font-size: 25px;
+      padding: 40px 30px 30px 20px;
     }
 
     .links {
@@ -93,28 +96,21 @@ nav {
 
     a.current {
       background-color: $color2;
-      border-right: none;
-      border-left: none;
-      border-radius: 0px;
-      height: 50px;
-      box-shadow: none;
     }
 
     .dropdown {
-      float: right;
       position: relative;
       display: inline-block;
 
       .dropbtn {
-        background-color: $color1;
+        background-color: $white;
         padding: 30px;
-        font-size: 16px;
-        border-right: 1px solid $color1;
-        border-top: 3px solid $color3;
-        border-bottom: 3px solid $color3;
-        border-left: 3px solid $color3;
-        border-bottom-left-radius: 10px;
-        border-top-left-radius: 10px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        border: 3px solid $color3;
+        border-right: none;
+        border-radius: 10px 0 0 10px;
+        color: $black;
         cursor: pointer;
       }
 
@@ -122,17 +118,21 @@ nav {
         display: none;
         position: absolute;
         background-color: $white;
+        margin-top: 10px;
         height: 100vh;
-        min-width: 160px;
-        overflow: auto;
-        box-shadow: 0px 8px 16px 0px $overlay-black;
+        width: 100vw;
+        overflow: scroll;
         right: 0;
-        z-index: 1;
+        z-index: 2;
       }
 
       .dropdown-content a {
+        text-align: center;
+        font-size: 18px;
         color: $black;
-        padding: 12px 16px;
+        padding: 30px 0;
+        font-weight: 600;
+        letter-spacing: 1px;
         text-decoration: none;
         display: block;
       }

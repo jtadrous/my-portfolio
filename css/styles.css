@@ -134,11 +134,12 @@ nav .dropdown {
 @media only screen and (max-width: 980px) {
   nav {
     height: 110px;
+    padding: 0 0 0 30px;
   }
   nav h1 {
     width: 90%;
-    font-size: 30px;
-    padding: 25px 30px 30px 30px;
+    font-size: 25px;
+    padding: 40px 30px 30px 20px;
   }
   nav .links {
     display: none;
@@ -146,43 +147,40 @@ nav .dropdown {
   }
   nav a.current {
     background-color: #afd3bf;
-    border-right: none;
-    border-left: none;
-    border-radius: 0px;
-    height: 50px;
-    box-shadow: none;
   }
   nav .dropdown {
-    float: right;
     position: relative;
     display: inline-block;
   }
   nav .dropdown .dropbtn {
-    background-color: #dceae2;
+    background-color: #f5f7f7;
     padding: 30px;
-    font-size: 16px;
-    border-right: 1px solid #dceae2;
-    border-top: 3px solid #0068bd;
-    border-bottom: 3px solid #0068bd;
-    border-left: 3px solid #0068bd;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border: 3px solid #0068bd;
+    border-right: none;
+    border-radius: 10px 0 0 10px;
+    color: #19181a;
     cursor: pointer;
   }
   nav .dropdown .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f5f7f7;
+    margin-top: 10px;
     height: 100vh;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+    width: 100vw;
+    overflow: scroll;
     right: 0;
-    z-index: 1;
+    z-index: 2;
   }
   nav .dropdown .dropdown-content a {
+    text-align: center;
+    font-size: 18px;
     color: #19181a;
-    padding: 12px 16px;
+    padding: 30px 0;
+    font-weight: 600;
+    letter-spacing: 1px;
     text-decoration: none;
     display: block;
   }
@@ -324,6 +322,7 @@ nav .dropdown {
   .home {
     width: 85%;
     flex-direction: column;
+    margin-top: 165px;
     /* img {
       width: 90%;
       padding: 10px;
@@ -483,6 +482,7 @@ nav .dropdown {
   .bio {
     width: 85%;
     font-size: 16px;
+    margin-top: 165px;
   }
   .bio .top {
     padding: 20px;
@@ -840,7 +840,7 @@ nav .dropdown {
 @media only screen and (max-width: 980px) {
   .design {
     flex-direction: column;
-    margin: 50px auto auto auto;
+    margin: 70px auto auto auto;
   }
   .design .dock #selected {
     flex-direction: column;
