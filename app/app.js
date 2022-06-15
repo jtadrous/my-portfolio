@@ -2,7 +2,7 @@ var design, art;
 
 function loadData() {
   //jquery way if you have the data in an external json file
-  $.getJSON("../data/data.json", function (projects) {
+  $.getJSON("data/data.json", function (projects) {
     console.log("working");
     design = projects.design_work;
     art = projects.art_work;
