@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Press Kit - Julie Tadrous</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="../index.html"
+          ><img src="../../images/black-logo.png" alt="logo"
+        /></a>
+      </div>
+      <br />
+      <h1>Julie Tadrous</h1>
+      <div class="links">
+        <a href="../../index.html">Home</a>
+        <a href="../bio.html">Bio</a>
+        <a href="../design.html">Design</a>
+        <a href="../artwork.html" class="current">Artwork</a>
+        <a href="../../index.html#contact-nav">Contact</a>
+        <a
+          href="../../images/Julie_Tadrous_GitHub_Resume_2022.pdf"
+          download
+          class="resume"
+          >Resume</a
+        >
+      </div>
+      <!--Code similar to tutorial at https://www.w3schools.com/howto/howto_js_dropdown.asp-->
+      <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="../../index.html">Home</a>
+          <a href="../bio.html">Bio</a>
+          <a href="../design.html">Design</a>
+          <a href="../artwork.html" class="current">Artwork</a>
+          <a href="../../index.html#contact-nav">Contact</a>
+          <a
+            href="../../images/Julie_Tadrous_GitHub_Resume_2022.pdf"
+            download
+            class="resume"
+            >Resume</a
+          >
+        </div>
+      </div>
+    </nav>
+    <section class="work">
+      <div class="top" data-aos="fade-up" aos-init aos-animate>
+        <!--<strong><a href="#">< &nbsp; Previous</a></strong>-->
+        <h2>E.L.F. Rebranding</h2>
+        <br />
+        <!--<strong><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Next &nbsp; ></a></strong>-->
+        <em><h5>Digital Press Kit, 2022</h5></em>
+        <p>
+          A full redesign of the E.L.F. cosmetics brand, including a website
+          mockup, promotional video, and poster. The website mockup was designed
+          in Adobe XD. The promotional video was edited in Adobe Premiere using
+          various templates and transitions. Lastly, the poster was created in
+          Adobe Illustrator. The typography, color scheme, and brand identity
+          were considered in the redesign process.
+        </p>
+      </div>
+
+      <div class="bottom">
+        <img src="../../images/elf-poster.jpg" alt="elf-poster" />
+        <p>E.L.F. Poster</p>
+        <img src="../../images/elf-webpage-1.png" alt="elf-webpage-1" />
+        <p>E.L.F. Webpage 1</p>
+        <img src="../../images/elf-webpage-2.png" alt="elf-webpage-2" />
+        <p>E.L.F. Webpage 2</p>
+        <img src="../../images/elf-webpage-3.png" alt="elf-webpage-3" />
+        <p>E.L.F. Webpage 3</p>
+        <video width="750" height="550" class="video" autoplay muted controls>
+          <source src="../../images/elf-promo-video.mp4" type="video/mp4" />
+        </video>
+        <p>E.L.F. Promotional Video</p>
+      </div>
+      <a href="../artwork.html"><button>Back to Artwork</button></a>
+    </section>
+    <br /><br /><br />
+    <footer>
+      <p>2022. Designed & Developed by Julie Tadrous.</p>
+    </footer>
+
+    <!--my own scripts-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 500,
+        delay: 50,
+      });
+    </script>
+    <script src="../../lib/jquery-3.6.0.min.js"></script>
+    <script src="../../app/app.js"></script>
+  </body>
+</html>
