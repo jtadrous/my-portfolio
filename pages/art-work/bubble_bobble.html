@@ -1,54 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bubble Bobble - Julie Tadrous</title>
-    <link rel="stylesheet" href="../../css/styles.css">
-    <script src="../../app/app.js"></script>
-</head>
-<body>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/styles.css" />
+  </head>
+  <body>
     <nav>
-        <h1>Julie Tadrous</h1>
-        <!--<div class="logo"><img src="" alt="logo"><br/>-->
-        <div class="links">
-            <a href="../../index.html"><em>HOME</em></a>
-            <a href="../bio.html"><em>BIO</em></a>
-            <a href="../design.html"><em>DESIGN</em></a>
-            <a href="../artwork.html" class="current"><em>ARTWORK</em></a>
-            <a href="../contact.html"><em>CONTACT</em></a>
+      <div class="logo">
+        <a href="../index.html"
+          ><img src="../../images/black-logo.png" alt="logo"
+        /></a>
+      </div>
+      <br />
+      <h1>Julie Tadrous</h1>
+      <div class="links">
+        <a href="../../index.html">Home</a>
+        <a href="../bio.html">Bio</a>
+        <a href="../design.html">Design</a>
+        <a href="../artwork.html" class="current">Artwork</a>
+        <a href="../../index.html#contact-nav">Contact</a>
+        <a
+          href="../../images/Julie_Tadrous_GitHub_Resume_2022.pdf"
+          download
+          class="resume"
+          >Resume</a
+        >
+      </div>
+      <!--Code similar to tutorial at https://www.w3schools.com/howto/howto_js_dropdown.asp-->
+      <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="../../index.html">Home</a>
+          <a href="../bio.html">Bio</a>
+          <a href="../design.html">Design</a>
+          <a href="../artwork.html" class="current">Artwork</a>
+          <a href="../../index.html#contact-nav">Contact</a>
+          <a
+            href="../../images/Julie_Tadrous_GitHub_Resume_2022.pdf"
+            download
+            class="resume"
+            >Resume</a
+          >
         </div>
-        <!--Code similar to tutorial at https://www.w3schools.com/howto/howto_js_dropdown.asp-->
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Menu</button>
-            <div id="myDropdown" class="dropdown-content">
-                <a href="../../index.html"><em>HOME</em></a>
-                <a href="../bio.html"><em>BIO</em></a>
-                <a href="../design.html"><em>DESIGN</em></a>
-                <a href="../artwork.html" class="current"><em>ARTWORK</em></a>
-                <a href="../contact.html"><em>CONTACT</em></a>
-            </div>
-        </div>
+      </div>
     </nav>
     <section class="work">
-        <div class="top">
-            <!--<strong><a href="#">< &nbsp; Previous</a></strong>-->
-            <h2>Bubble Bobble</h2>
-            <!--<strong><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Next &nbsp; ></a></strong>-->
-        </div>
+      <div class="top" data-aos="fade-up" aos-init aos-animate>
+        <!--<strong><a href="#">< &nbsp; Previous</a></strong>-->
+        <h2>Bubble Bobble</h2>
+        <br />
+        <!--<strong><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Next &nbsp; ></a></strong>-->
         <em><h5>Stop Motion Animation, 2018</h5></em>
-        <p>A stop motion animation of the iconic Bubble Bobble game. This project was intended for us to recreate our favorite vintage video games through the use of stop motion. All of the graphics were printed out and placed on a board. The video features 362 different images, which were edited and sequenced in Adobe After Effects.</p>
-        <div class="bottom">
-            <video width="550" height="350" class="video" autoplay muted controls>
-                <source src="../../images/Final SM Video.mp4" type="video/mp4">
-            </video>
-        </div>
-        <a href="../artwork.html"><button>Back to Artwork</button></a>
+        <p>
+          A stop motion animation of the iconic Bubble Bobble game. This project
+          was intended for us to recreate our favorite vintage video games
+          through the use of stop motion. All of the graphics were printed out
+          and placed on a board. The video features 362 different images, which
+          were edited and sequenced in Adobe After Effects.
+        </p>
+      </div>
+
+      <div class="bottom">
+        <video width="750" height="550" class="video" autoplay muted controls>
+          <source src="../../images/stop-motion-video.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <a href="../artwork.html"><button>Back to Artwork</button></a>
     </section>
-    <br/><br/><br/>
+    <br /><br /><br />
     <footer>
-        <h2>© 2021 by Julie Tadrous.</h2>
+      <p>2022. Designed & Developed by Julie Tadrous.</p>
     </footer>
-</body>
+
+    <!--my own scripts-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 500,
+        delay: 50,
+      });
+    </script>
+    <script src="../../lib/jquery-3.6.0.min.js"></script>
+    <script src="../../app/app.js"></script>
+  </body>
 </html>

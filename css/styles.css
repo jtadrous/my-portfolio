@@ -693,15 +693,15 @@ nav .dropdown {
 @media only screen and (max-width: 980px) {
   .work {
     width: 85%;
-    padding: 10px;
+    padding: 10px 0 0 0;
     font-size: 16px;
   }
   .work .top {
     padding: 20px;
   }
-  .work p {
+  .work .top p {
     width: 100%;
-    line-height: 25px;
+    line-height: 22px;
   }
   .work .bottom img {
     width: 80%;
