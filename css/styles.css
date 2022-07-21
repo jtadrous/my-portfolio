@@ -59,6 +59,13 @@ button:hover {
   box-shadow: 3px 0px 6px 0px rgba(0, 0, 0, 0.4);
 }
 
+hr {
+  border-top: 5px solid #afd3bf;
+  border-radius: 30px;
+  border-left: none;
+  border-bottom: none;
+}
+
 /* styling for the navigation bar */
 nav {
   width: 100%;
@@ -685,6 +692,14 @@ nav .dropdown {
   padding: 0;
   text-align: center;
   font-size: 16px;
+  text-transform: uppercase;
+}
+.work .bottom h4 {
+  margin: 75px auto 0 auto;
+  text-decoration: underline;
+}
+.work .bottom hr {
+  margin-top: 75px;
 }
 .work button {
   margin-top: 60px;
@@ -732,12 +747,6 @@ nav .dropdown {
   margin: 0 auto;
   padding-top: 90px;
   text-align: center;
-}
-.design .dock hr {
-  border-top: 5px solid #afd3bf;
-  border-radius: 30px;
-  border-left: none;
-  border-bottom: none;
 }
 .design .dock #selected {
   display: flex;

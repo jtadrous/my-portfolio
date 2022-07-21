@@ -101,10 +101,10 @@
     {
       "id": "3",
       "image": "../images/julie-andrews.jpg",
-      "title": "Drawings + Paintings",
-      "sub": "Beginning Drawing and Painting Coursework, 2019-2022",
+      "title": "Drawings & Paintings",
+      "sub": "Beginning Drawing and Painting Coursework, 2019—2022",
       "desc": "A series of artwork created during the Beginning Drawing I, Beginning Drawing II, and Beginning Painting I courses offered at the Herron School of Art. Most paintings were created using oil-based paints and fine brushes. Most drawings were created using charcoal sticks and graphite pencils.",
-      "link": "../pages/art-work/paintings.html"
+      "link": "../pages/art-work/drawings.html"
     },
     {
       "id": "4",

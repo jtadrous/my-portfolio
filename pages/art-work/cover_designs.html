@@ -1,57 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cover Designs - Julie Tadrous</title>
-    <link rel="stylesheet" href="../../css/styles.css">
-    <script src="../../app/app.js"></script>
-</head>
-<body>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/styles.css" />
+  </head>
+  <body>
     <nav>
-        <h1>Julie Tadrous</h1>
-        <!--<div class="logo"><img src="" alt="logo"><br/>-->
-        <div class="links">
-            <a href="../../index.html"><em>HOME</em></a>
-            <a href="../bio.html"><em>BIO</em></a>
-            <a href="../design.html"><em>DESIGN</em></a>
-            <a href="../artwork.html" class="current"><em>ARTWORK</em></a>
-            <a href="../contact.html"><em>CONTACT</em></a>
+      <div class="logo">
+        <a href="../index.html"
+          ><img src="../../images/black-logo.png" alt="logo"
+        /></a>
+      </div>
+      <br />
+      <h1>Julie Tadrous</h1>
+      <div class="links">
+        <a href="../../index.html">Home</a>
+        <a href="../bio.html">Bio</a>
+        <a href="../design.html">Design</a>
+        <a href="../artwork.html" class="current">Artwork</a>
+        <a href="../../index.html#contact-nav">Contact</a>
+        <a
+          href="../../images/Julie_Tadrous_GitHub_Resume_2022.pdf"
+          download
+          class="resume"
+          >Resume</a
+        >
+      </div>
+      <!--Code similar to tutorial at https://www.w3schools.com/howto/howto_js_dropdown.asp-->
+      <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="../../index.html">Home</a>
+          <a href="../bio.html">Bio</a>
+          <a href="../design.html">Design</a>
+          <a href="../artwork.html" class="current">Artwork</a>
+          <a href="../../index.html#contact-nav">Contact</a>
+          <a
+            href="../../images/Julie_Tadrous_GitHub_Resume_2022.pdf"
+            download
+            class="resume"
+            >Resume</a
+          >
         </div>
-        <!--Code similar to tutorial at https://www.w3schools.com/howto/howto_js_dropdown.asp-->
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Menu</button>
-            <div id="myDropdown" class="dropdown-content">
-                <a href="../../index.html"><em>HOME</em></a>
-                <a href="../bio.html"><em>BIO</em></a>
-                <a href="../design.html"><em>DESIGN</em></a>
-                <a href="../artwork.html" class="current"><em>ARTWORK</em></a>
-                <a href="../contact.html"><em>CONTACT</em></a>
-            </div>
-        </div>
+      </div>
     </nav>
     <section class="work">
-        <div class="top">
-            <!--<strong><a href="#">< &nbsp; Previous</a></strong>-->
-            <h2>Percy Jackson</h2>
-            <!--<strong><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Next &nbsp; ></a></strong>-->
-        </div>
+      <div class="top" data-aos="fade-up" aos-init aos-animate>
+        <!--<strong><a href="#">< &nbsp; Previous</a></strong>-->
+        <h2>Percy Jackson</h2>
+        <!--<strong><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Next &nbsp; ></a></strong>-->
         <em><h5>Novel Cover Designs, 2021</h5></em>
-        <p>Three different cover designs of "Percy Jackson and the Last Olympian", a novel by Rick Riordan. Each design was created in Illustrator using various tools such as gradient, curvature, and shape builder tool.</p>
-        <div class="bottom">
-            <img src="../../images/Cover Design 1.png" alt="cover_design_one">
-            <p>Cover Design 1</p>
-            <img src="../../images/Cover Design 2.png" alt="cover_design_two">
-            <p>Cover Design 2</p>
-            <img src="../../images/Cover Design 3.png" alt="cover_design_three">
-            <p>Cover Design 3</p>
-        </div>
-        <a href="../artwork.html"><button>Back to Artwork</button></a>
+        <p>
+          Three different cover designs of "Percy Jackson and the Last
+          Olympian", a novel by Rick Riordan. Each design was created in
+          Illustrator using various tools such as gradient, curvature, and shape
+          builder tool.
+        </p>
+      </div>
+      <div class="bottom">
+        <img src="../../images/Cover Design 1.png" alt="cover_design_one" />
+        <p>Cover Design 1</p>
+        <img src="../../images/Cover Design 2.png" alt="cover_design_two" />
+        <p>Cover Design 2</p>
+        <img src="../../images/Cover Design 3.png" alt="cover_design_three" />
+        <p>Cover Design 3</p>
+      </div>
+      <a href="../artwork.html"><button>Back to Artwork</button></a>
     </section>
-    <br/><br/><br/>
+    <br /><br /><br />
     <footer>
-        <h2>© 2021 by Julie Tadrous.</h2>
+      <p>2022. Designed & Developed by Julie Tadrous.</p>
     </footer>
-</body>
+
+    <!--my own scripts-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 500,
+        delay: 50,
+      });
+    </script>
+    <script src="../../lib/jquery-3.6.0.min.js"></script>
+    <script src="../../app/app.js"></script>
+  </body>
 </html>

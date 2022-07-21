@@ -50,3 +50,10 @@ button:hover {
 .scrolling-active {
   box-shadow: 3px 0px 6px 0px $overlay-black;
 }
+
+hr {
+  border-top: 5px solid $color2;
+  border-radius: 30px;
+  border-left: none;
+  border-bottom: none;
+}
