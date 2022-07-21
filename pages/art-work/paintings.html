@@ -1,69 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Drawings and Paintings - Julie Tadrous</title>
-    <link rel="stylesheet" href="../../css/styles.css">
-    <script src="../../app/app.js"></script>
-</head>
-<body>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/styles.css" />
+  </head>
+  <body>
     <nav>
-        <h1>Julie Tadrous</h1>
-        <!--<div class="logo"><img src="" alt="logo"><br/>-->
-        <div class="links">
-            <a href="../../index.html"><em>HOME</em></a>
-            <a href="../bio.html"><em>BIO</em></a>
-            <a href="../design.html"><em>DESIGN</em></a>
-            <a href="../artwork.html" class="current"><em>ARTWORK</em></a>
-            <a href="../contact.html"><em>CONTACT</em></a>
+      <div class="logo">
+        <a href="../index.html"
+          ><img src="../../images/black-logo.png" alt="logo"
+        /></a>
+      </div>
+      <br />
+      <h1>Julie Tadrous</h1>
+      <div class="links">
+        <a href="../../index.html">Home</a>
+        <a href="../bio.html">Bio</a>
+        <a href="../design.html">Design</a>
+        <a href="../artwork.html" class="current">Artwork</a>
+        <a href="../../index.html#contact-nav">Contact</a>
+        <a
+          href="../../images/Julie_Tadrous_GitHub_Resume_2022.pdf"
+          download
+          class="resume"
+          >Resume</a
+        >
+      </div>
+      <!--Code similar to tutorial at https://www.w3schools.com/howto/howto_js_dropdown.asp-->
+      <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="../../index.html">Home</a>
+          <a href="../bio.html">Bio</a>
+          <a href="../design.html">Design</a>
+          <a href="../artwork.html" class="current">Artwork</a>
+          <a href="../../index.html#contact-nav">Contact</a>
+          <a
+            href="../../images/Julie_Tadrous_GitHub_Resume_2022.pdf"
+            download
+            class="resume"
+            >Resume</a
+          >
         </div>
-        <!--Code similar to tutorial at https://www.w3schools.com/howto/howto_js_dropdown.asp-->
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Menu</button>
-            <div id="myDropdown" class="dropdown-content">
-                <a href="../../index.html"><em>HOME</em></a>
-                <a href="../bio.html"><em>BIO</em></a>
-                <a href="../design.html"><em>DESIGN</em></a>
-                <a href="../artwork.html" class="current"><em>ARTWORK</em></a>
-                <a href="../contact.html"><em>CONTACT</em></a>
-            </div>
-        </div>
+      </div>
     </nav>
     <section class="work">
-        <div class="top">
-            <!--<strong><a href="#">< &nbsp; Previous</a></strong>-->
-            <h2>Drawings + Paintings</h2>
-            <!--<strong><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Next &nbsp; ></a></strong>-->
-        </div>
-        <em><h5>Beginning Drawing and Painting Coursework, 2019</h5></em>
-        <p>A series of artwork created during the Beginning Drawing I and Beginning Painting I courses offered at the Herron School of Art. Most paintings were created using oil-based paints and fine brushes. All drawings were created using charcoal sticks and pencils.</p>
-        <div class="bottom">
-            <img src="../../images/fruit bowl.jpg" alt="fruit_bowl_painting">
-            <p>Fruit Bowl Oil Painting</p>
-            <img src="../../images/van gogh.jpg" alt="van_gogh_painting">
-            <p>Recreation of Almond Blossoms by Van Gogh</p>
-            <img src="../../images/table.jpg" alt="table_spread_painting">
-            <p>Table Spread Oil Painting</p>
-            <img src="../../images/moon.jpg" alt="moon_painting">
-            <p>Abstract Moon Oil Painting</p>
-            <img src="../../images/julie andrews.jpg" alt="julie_andrews_painting">
-            <p>Julie Andrews Acrylic Painting</p>
-            <img src="../../images/skull.jpg" alt="skull_drawing">
-            <p>Skull Charcoal Drawing</p>
-            <img src="../../images/hands.jpg" alt="hands_drawing">
-            <p>"Love" Hands Charcoal Drawing</p>
-            <img src="../../images/brush.jpg" alt="brush_drawing">
-            <p>Hair Brush Charcoal Drawing</p>
-            <img src="../../images/shoe.jpg" alt="shoe_drawing">
-            <p>Vans Shoe Charcoal Drawing</p>
-        </div>
-        <a href="../artwork.html"><button>Back to Artwork</button></a>
+      <div class="top" data-aos="fade-up" aos-init aos-animate>
+        <!--<strong><a href="#">< &nbsp; Previous</a></strong>-->
+        <h2>Drawings + Paintings</h2>
+        <!--<strong><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Next &nbsp; ></a></strong>-->
+        <em><h5>Beginning Drawing and Painting Coursework, 2019-2022</h5></em>
+        <p>
+          A series of artwork created during the Beginning Drawing I, Beginning
+          Drawing II, and Beginning Painting I courses offered at the Herron
+          School of Art. Most paintings were created using oil-based paints and
+          fine brushes. Most drawings were created using charcoal sticks and
+          graphite pencils.
+        </p>
+      </div>
+
+      <div class="bottom">
+        <em><h4>Beginning Drawing II</h4></em>
+        <img
+          src="../../images/metal-glass-wood.jpg"
+          alt="metal-glass-wood_drawing"
+        />
+        <p>3 Object Metal/Glass/Wood Drawing</p>
+        <img
+          src="../../images/odd-view-self-portrait.jpg"
+          alt="odd-view-self-portrait_drawing"
+        />
+        <p>Odd View Self Portrait Drawing</p>
+        <img
+          src="../../images/my-playing-card.jpg"
+          alt="odd-view-self-portrait_drawing"
+        />
+        <p>My Playing Card Drawing</p>
+        <img
+          src="../../images/no-rectangles-here.jpg"
+          alt="no-rectangles-here_drawing"
+        />
+        <p>No Rectangles Here Drawing</p>
+        <img
+          src="../../images/figure-morphology.jpg"
+          alt="figure-morphology_drawing"
+        />
+        <p>Figure Morphology Drawing</p>
+        <br /><br />
+
+        <em><h4>Beginning Painting I</h4></em>
+        <img src="../../images/fruit bowl.jpg" alt="fruit_bowl_painting" />
+        <p>Fruit Bowl Oil Painting</p>
+        <img src="../../images/van gogh.jpg" alt="van_gogh_painting" />
+        <p>Recreation of Almond Blossoms by Van Gogh</p>
+        <img src="../../images/table.jpg" alt="table_spread_painting" />
+        <p>Table Spread Oil Painting</p>
+        <img src="../../images/moon.jpg" alt="moon_painting" />
+        <p>Abstract Moon Oil Painting</p>
+        <img
+          src="../../images/julie-andrews.jpg"
+          alt="julie_andrews_painting"
+        />
+        <p>Julie Andrews Acrylic Painting</p>
+        <br /><br />
+
+        <em><h4>Beginning Drawing I</h4></em>
+        <img src="../../images/skull.jpg" alt="skull_drawing" />
+        <p>Skull Charcoal Drawing</p>
+        <img src="../../images/hands.jpg" alt="hands_drawing" />
+        <p>"Love" Hands Charcoal Drawing</p>
+        <img src="../../images/brush.jpg" alt="brush_drawing" />
+        <p>Hair Brush Charcoal Drawing</p>
+        <img src="../../images/shoe.jpg" alt="shoe_drawing" />
+        <p>Vans Shoe Charcoal Drawing</p>
+      </div>
+      <a href="../artwork.html"><button>Back to Artwork</button></a>
     </section>
-    <br/><br/><br/>
+    <br /><br /><br />
     <footer>
-        <h2>© 2021 by Julie Tadrous.</h2>
+      <p>2022. Designed & Developed by Julie Tadrous.</p>
     </footer>
-</body>
+
+    <!--my own scripts-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 500,
+        delay: 50,
+      });
+    </script>
+    <script src="../../lib/jquery-3.6.0.min.js"></script>
+    <script src="../../app/app.js"></script>
+  </body>
 </html>
