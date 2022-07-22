@@ -1,0 +1,108 @@
+{
+  "old": [
+    {
+      "id": "2",
+      "image": "../images/App Gif.gif",
+      "title": "Professor's Wheel",
+      "sub": "Trivia App Project, 2018",
+      "desc": "A full web application created using HTML, CSS, and JavaScript. For high school and college students who have lower test scores and graduation rates, Professor's Wheel is a trivia app and learning activity that will make learning more interactive and fun. It features a spinning category wheel, in-app audio and buzzers, a timer, and a counter point system.",
+      "link": "../pages/design-work/Trivia App/index.html"
+    },
+    {
+      "id": "3",
+      "image": "../images/Jams 2.png",
+      "title": "Global Jams",
+      "sub": "PHP Web Application, 2019",
+      "desc": "A full database-driven Web Application developed with PHP and MySQL. Global Jams is a website that provides users with a taste of the top 2019 albums from countries around the world. The site features an inventory database, a login page, a search bar, and a working shopping cart. There are also admin features such as adding, deleting, and editing albums in the inventory.",
+      "link": "../pages/design-work/global_jams.html"
+    },
+    {
+      "id": "4",
+      "image": "../images/tic-tac-toe.png",
+      "title": "Tic Tac Toe",
+      "sub": "Board Game Project, 2020",
+      "desc": "A full web application created using HTML, CSS, and JavaScript. In this game, players alternate placing Xs and Os on the game board until either oppent has three in a row or all nine squares are filled. It features greensock animations, SVG's, several classes, and a counter-point system.",
+      "link": "../pages/design-work/Tic Tac Toe/index.html"
+    },
+    {
+      "id": "6",
+      "image": "../images/Bayside 1.png",
+      "title": "Bayside Beat",
+      "sub": "Blog/Journal Website, 2018",
+      "desc": "A full website created using HTML, CSS, and JavaScript. Bayside Beat is a blog website about the local food and recreational places to visit in the Bay area. It features images, reviews, and a column section.",
+      "link": "../pages/design-work/Bayside/index.html"
+    },
+    {
+      "id": "10",
+      "image": "../images/breakout.png",
+      "title": "Breakout Game",
+      "sub": "Intermediate Media Final Project, 2019",
+      "desc": "A full web game created using p5 and JavaScript. In this game, players use the left and right keyboard keys to move a paddle in the right place for a moving ball to bounce off of and hit a colored block. Each colored block hit earns them a point. It features various variables, functions, and if/else statements.",
+      "link": "../pages/design-work/Breakout/index.html"
+    },
+    {
+      "id": "1",
+      "image": "../images/Chair 3.jpg",
+      "title": "Chair Sculpture",
+      "sub": "Wood Shop Project, 2020",
+      "desc": "An old, thrifted chair reinvented into a cozy, lounge chair for any home. This Chair Sculpture stands to express the emotion of bright, child-like happiness. It was created by fully disassembling the parts of an old chair, cutting and fastening them together in a shape similar to a rocking chair, and painting the wood a neutral white to let the teal upholstery pop. Broken CDs serve as the detailing on the arm rests to add some shine.",
+      "link": "../pages/art-work/chair.html"
+    },
+    {
+      "id": "2",
+      "image": "../images/EE Letterhead.jpg",
+      "title": "Everlasting Emblems",
+      "sub": "Logo and Stationary Project, 2018",
+      "desc": "A fictional company logo and full stationary set with a teal accent color to match. Everlasting Emblems symbolizes any sort of Logo-Maker or Graphic Design company. The full stationary set was all created using Adobe Illustrator, and includes an envelope, business card, and letterhead.",
+      "link": "../pages/art-work/stationary.html"
+    },
+    {
+      "id": "4",
+      "image": "../images/mafiacent-poster.jpg",
+      "title": "Mafiacent Movie Poster",
+      "sub": "Genre Shift Project, 2021",
+      "desc": "A creative take on the Disney movie known as Maleficent. For this project, we were tasked with researching two different movie genres. We had to chose a movie from one of the genres and design a movie poster that would fit the second genre. Here I took the fantasy movie Maleficent and transformed it into the gangster genre. This was all designed in Adobe Photoshop.",
+      "link": "#"
+    },
+    {
+      "id": "5",
+      "image": "../images/MP Gif.gif",
+      "title": "Investigation Exploration",
+      "sub": "Movie Poster Project, 2018",
+      "desc": "A series of four different movie posters, made using Adobe Illustrator, depicting the same fictional movie, Investigation Exploration. Investigation Exploration is supposed to be an action movie of three sisters moving to the streets of Egypt for the summer to find happiness and passion. Each movie poster was made with a different aspect of the movie in mind and each has its own voice.",
+      "link": "../pages/art-work/movie_posters.html"
+    },
+    {
+      "id": "7",
+      "image": "../images/logotypes.png",
+      "title": "Maralumi Chocolate",
+      "sub": "Typography Logotypes Project, 2021",
+      "desc": "A unique logotype of a chosen word crafted using typography principles. Through research, semiotic nuances of the word were identified and given a visual voice. Topics considered during the logotype development include type characters, letterform, style, texture, weight, emotional tone, etc.",
+      "link": "../images/Project 1 Process Document.pdf"
+    },
+    {
+      "id": "10",
+      "image": "../images/Teddy Bear Cover.png",
+      "title": "Blender Renders",
+      "sub": "Interactive Media Projects, 2018",
+      "desc": "A group of 3D models including a mug, donut, plate, pool balls, and a teddy bear. All the models were designed and rendered using the Blender program and toolset. These designs feature various 3D shapes, colors, and functions.",
+      "link": "../pages/art-work/blender_renders.html"
+    },
+    {
+      "id": "11",
+      "image": "../images/Cover Design 3.png",
+      "title": "Percy Jackson",
+      "sub": "Novel Cover Designs, 2021",
+      "desc": "Three different cover designs of 'Percy Jackson and the Last Olympian', a novel by Rick Riordan. Each design was created in Illustrator using various tools such as gradient, curvature, and shape builder tool.",
+      "link": "../pages/art-work/cover_designs.html"
+    },
+    {
+      "id": "8",
+      "image": "../images/4Logos.png",
+      "title": "Fictional Company Logos",
+      "sub": "Logo Making Project, 2018",
+      "desc": "A collection of four different company logos. North Beacon, Forward Thinking, and Side Slice are all fictitious companies created for the purpose of portraying a company persona through a logo. Each of these logos were made with Adobe Illustrator using various negative space and coloring techniques.",
+      "link": "../pages/art-work/fictional_logos.html"
+    }
+  ]
+}
