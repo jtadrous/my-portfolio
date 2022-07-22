@@ -4,8 +4,8 @@ function loadData() {
   //jquery way if you have the data in an external json file
   $.getJSON("../data/data.json", function (projects) {
     console.log("working");
-    design = projects.design_work;
-    art = projects.art_work;
+    design = projects.websites;
+    art = projects.design;
     console.log(design);
     console.log(art);
   }).fail(function (jqxhr, textStatus, error) {
