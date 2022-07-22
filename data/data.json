@@ -70,7 +70,7 @@
       "id": "2",
       "image": "../images/redline-gif.gif",
       "title": "RedLine Application",
-      "sub": "INFO-I 270 Introduction to Human-Computer Interaction Final Project, 2019",
+      "sub": "I270 Introduction to Human-Computer Interaction Final Project, 2019",
       "desc": "An original wireframe of an application using Mockflow.com. The RedLine is a new bus system that runs from downtown Indy to the University of Indianapolis. This fictional application was designed to enhance the user experience, allow them to search points of interests, and buy tickets. It features a map, search bar, info cards with star reviews, and multiple payment methods.",
       "link": "../pages/design/redline.html"
     },
