@@ -5,60 +5,105 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Digital Media - Julie Tadrous</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../../css/styles.css" />
-    <script src="../../app/app.js"></script>
   </head>
   <body>
     <nav>
+      <div class="logo">
+        <a href="../index.html"
+          ><img src="../../images/black-logo.png" alt="logo"
+        /></a>
+      </div>
+      <br />
       <h1>Julie Tadrous</h1>
-      <!--<div class="logo"><img src="" alt="logo"><br/>-->
       <div class="links">
-        <a href="../../index.html"><em>HOME</em></a>
-        <a href="../bio.html"><em>BIO</em></a>
-        <a href="../design.html"><em>DESIGN</em></a>
-        <a href="../artwork.html" class="current"><em>ARTWORK</em></a>
-        <a href="../contact.html"><em>CONTACT</em></a>
+        <a href="../../index.html">Home</a>
+        <a href="../bio.html">Bio</a>
+        <a href="../websites.html">Websites</a>
+        <a href="../design.html" class="current">Design</a>
+        <a href="../../index.html#contact-nav">Contact</a>
+        <a
+          href="../../images/Julie_Tadrous_GitHub_Resume_2022.pdf"
+          download
+          class="resume"
+          >Resume</a
+        >
       </div>
       <!--Code similar to tutorial at https://www.w3schools.com/howto/howto_js_dropdown.asp-->
       <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">Menu</button>
+        <button class="dropbtn">Menu</button>
         <div id="myDropdown" class="dropdown-content">
-          <a href="../../index.html"><em>HOME</em></a>
-          <a href="../bio.html"><em>BIO</em></a>
-          <a href="../design.html"><em>DESIGN</em></a>
-          <a href="../artwork.html" class="current"><em>ARTWORK</em></a>
-          <a href="../contact.html"><em>CONTACT</em></a>
+          <a href="../../index.html">Home</a>
+          <a href="../bio.html">Bio</a>
+          <a href="../websites.html">Websites</a>
+          <a href="../design.html" class="current">Design</a>
+          <a href="../../index.html#contact-nav">Contact</a>
+          <a
+            href="../../images/Julie_Tadrous_GitHub_Resume_2022.pdf"
+            download
+            class="resume"
+            >Resume</a
+          >
         </div>
       </div>
     </nav>
     <section class="details">
-      <div class="top">
+      <div class="top" data-aos="fade-up" aos-init aos-animate>
         <!--<strong><a href="#">< &nbsp; Previous</a></strong>-->
-        <h2>Digital Media Imagery</h2>
+        <h2>Digital Media</h2>
+        <br />
         <!--<strong><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Next &nbsp; ></a></strong>-->
+        <em><h5>N102 Digital Media Imagery Coursework, 2021</h5></em>
+        <p>
+          A series of projects created in Adobe Photoshop and Illustrator for
+          the Digital Media Imagery course offered at the School of Informatics
+          and Computing. The objective of the design poster project was to
+          create a poster that illustrated each of the 9 principles of design in
+          a clear and eye-catching way. The objective of the unique
+          advertisement project was to sell a product or idea in a clever way by
+          mergeing type and imagery. The objective of the family crest project
+          was to design a crest using symbols related to your culture and
+          identity, and a color scheme based on a photo from nature. The
+          objective of the digital eye painting was to draw a realistic image of
+          your eyes using various painting tools within Photoshop.
+        </p>
       </div>
-      <em><h5>Digital Media Projects, 2021</h5></em>
-      <p>
-        A series of projects created in Adobe Photoshop and Illustrator for the
-        Digital Media Imagery course offered at SoIC. The clever product image
-        for a fictional wine company depicting flowers growing from a wine
-        bottle was created for the advertisement project. The digital eye
-        painting was created using various painting tools within Photoshop.
-      </p>
       <div class="bottom">
         <img
-          src="../../images/Julie Tadrous - Advertisement Project 2.jpg"
-          alt="wine_advertisement_project"
+          src="../../images/principles-of-design-poster.jpg"
+          alt="principles-of-design-poster"
         />
-        <p>Advertisement Project</p>
-        <img src="../../images/Eyes Final Draft.png" alt="my_eyes_painting" />
+        <p>Principles Of Design Poster</p>
+        <img
+          src="../../images/wine-advertisement.jpg"
+          alt="wine-advertisement-project"
+        />
+        <p>Unique Advertisement Project</p>
+        <img src="../../images/family-crest.jpg" alt="family-crest" />
+        <p>Family Crest Design</p>
+        <img
+          src="../../images/digital-eye-painting.png"
+          alt="digital-eye-painting"
+        />
         <p>Digital Eye Painting</p>
       </div>
-      <a href="../artwork.html"><button>Back to Artwork</button></a>
+      <a href="../design.html"><button>Back to Design Projects</button></a>
     </section>
     <br /><br /><br />
     <footer>
-      <h2>© 2021 by Julie Tadrous.</h2>
+      <p>2022. Designed & Developed by Julie Tadrous.</p>
     </footer>
+
+    <!--my own scripts-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 500,
+        delay: 50,
+      });
+    </script>
+    <script src="../../lib/jquery-3.6.0.min.js"></script>
+    <script src="../../app/app.js"></script>
   </body>
 </html>
