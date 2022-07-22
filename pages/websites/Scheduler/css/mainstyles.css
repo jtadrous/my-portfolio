@@ -1,199 +1,217 @@
 body {
-    background-color: lightblue;
+  background-color: lightblue;
 }
 
 #wrapper {
-    width: 980px;
-    margin: 0 auto;
-    margin-top: 20px
+  width: 980px;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
 /*  SECTIONS  */
 .section {
-    clear: both;
-    padding: 0px;
-    margin: 0px;
+  clear: both;
+  padding: 0px;
+  margin: 0px;
 }
 
 /*  COLUMN SETUP  */
 .col {
-    display: block;
-    float:left;
-    margin: 1% 0 1% 1.6%;
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%;
 }
-.col:first-child { margin-left: 0; }
+.col:first-child {
+  margin-left: 0;
+}
 
 /*  GROUPING  */
 .group:before,
-.group:after { content:""; display:table; }
-.group:after { clear:both;}
-.group { zoom:1; /* For IE 6/7 */ }
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  zoom: 1; /* For IE 6/7 */
+}
 /*  GRID OF FOUR  */
 .span_4_of_4 {
-    width: 100%;
+  width: 100%;
 }
 .span_3_of_4 {
-    width: 74.6%;
+  width: 74.6%;
 }
 .span_2_of_4 {
-    width: 49.2%;
+  width: 49.2%;
 }
 .span_1_of_4 {
-    width: 23.8%;
+  width: 23.8%;
 }
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 480px) {
-    .col {  margin: 1% 0 1% 0%; }
-    .span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4 { width: 100%; }
+  .col {
+    margin: 1% 0 1% 0%;
+  }
+  .span_1_of_4,
+  .span_2_of_4,
+  .span_3_of_4,
+  .span_4_of_4 {
+    width: 100%;
+  }
 }
 
 /* styles for headers */
 #big-header {
-    font-family: 'Kaushan Script', cursive;
+  font-family: "Kaushan Script", cursive;
 }
 
 #small-header {
-    font-family: 'Kaushan Script', cursive;
+  font-family: "Kaushan Script", cursive;
 }
 
 #med-header {
-    font-family: 'Kaushan Script', cursive;
+  font-family: "Kaushan Script", cursive;
 }
 
 /* styles for degree map */
 #map {
-    background-color: #DFDFE1;
-    border: 10px double #5181b2;
-    padding: 5px;
-    width: 100%;
-    min-height: 100px;
-    overflow: hidden;
+  background-color: #dfdfe1;
+  border: 10px double #5181b2;
+  padding: 5px;
+  width: 100%;
+  min-height: 100px;
+  overflow: hidden;
 }
 
-#map header{ 
-    color: black;
-    font-weight: 600;
-    font-size: large;
-    background-color: white;
-    padding: 5px 0;
-    text-align: center;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+#map header {
+  color: black;
+  font-weight: 600;
+  font-size: large;
+  /* background-color: white; */
+  padding: 5px 0;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #5181b2;
 }
 
 /* styles for semesters */
 .semester-header {
-    margin-top: 12px;
-    font-weight: 600;
-    font-family: 'Kaushan Script', cursive;
+  margin-top: 12px;
+  font-weight: 600;
+  font-family: "Kaushan Script", cursive;
 }
 
 .semester {
-    min-height: 160px;
-    border: 1px dotted #5181b2;
-    padding: 2px 5px;
-    background-color: #d7f2c9;
-    overflow: hidden;
+  min-height: 160px;
+  border: 1px dotted #5181b2;
+  padding: 2px 5px;
+  background-color: white;
+  /* background-color: #d7f2c9; */
+  overflow: hidden;
 }
 
 /* styles for course list */
 #course-list {
-    background-color: #dfdfe1;
-    border: 10px double #5181b2;
-    padding: 5px;
-    width: 100%;
-    min-height: 100px;
-    overflow: hidden;
+  background-color: #dfdfe1;
+  border: 10px double #5181b2;
+  padding: 5px;
+  width: 100%;
+  min-height: 100px;
+  overflow: hidden;
 }
 
 /* styles for course groups */
 .course-group-header {
-    margin-bottom: 2px;
-    height: 22px;
-    padding-left: 5px;
+  margin-bottom: 2px;
+  height: 22px;
+  padding-left: 5px;
 }
 
 .course-group {
-    min-height: 80px;
-    margin-bottom: 10px;
-    clear: both;
-    overflow: hidden;
+  min-height: 80px;
+  margin-bottom: 10px;
+  clear: both;
+  overflow: hidden;
 }
 
 /* styles for courses */
 .course {
-    background-color: #45c19c;
-    width: 98px;
-    height: 70px;
-    padding: 2px;
-    text-align: center;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 10pt;
-    cursor: move;
-    margin: 2px;
-    border: 1px solid #333;
-    float: left;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+  background-color: #45c19c;
+  width: 98px;
+  height: 70px;
+  padding: 2px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 10pt;
+  cursor: move;
+  margin: 2px;
+  border: 1px solid #333;
+  float: left;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 
 .corea-header {
-    background-color: yellow;
+  background-color: yellow;
 }
 
 .coreb-header {
-    background-color: #b1b1ff;
+  background-color: #b1b1ff;
 }
 
 .capstone-header {
-    background-color: sandybrown;
+  background-color: sandybrown;
 }
 
 .spec-header {
-    background-color: #6096d1;
+  background-color: #6096d1;
 }
 
 .gedu-header {
-    background-color: #d86be0;
+  background-color: #d86be0;
 }
 
-input[type='text'] {
-    border: none;
-    width: 96px;
-    font-size: 9pt;
-    text-transform: uppercase;
-    text-align: center;
+input[type="text"] {
+  border: none;
+  width: 96px;
+  font-size: 9pt;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .course textarea {
-    border: none;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 10pt;
-    width: 94px;
-    height: 50px;
-    text-align: center;
-    resize: none;
-    outline: none;
-    overflow: hidden;
+  border: none;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 10pt;
+  width: 94px;
+  height: 50px;
+  text-align: center;
+  resize: none;
+  outline: none;
+  overflow: hidden;
 }
 
 img.add-course {
-    width: 30px;
-    height: 16px;
-    display: inline-block;
-    vertical-align: middle;
-    cursor: pointer;
+  width: 30px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
 }
 
 button {
-    width: 95px;
+  width: 95px;
 }
 
 .page-break {
-    display: block;
-    page-break-after: always;
-    position: relative;
+  display: block;
+  page-break-after: always;
+  position: relative;
 }

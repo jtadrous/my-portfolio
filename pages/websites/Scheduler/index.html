@@ -1,199 +1,434 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Informatics Personalized Plan of Study</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="img/favicon-2.ico" type="image/x-icon">
-        <link href="css/mainstyles.css" rel="stylesheet" type="text/css"/>
-        <script src="js/mainscript.js" type="text/javascript"></script>
-        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-        <script src="js/data_operations.js" type="text/javascript"></script>
-    </head>
-    <body>
-        <div id="wrapper">
-            <h2 style="text-align: center;" id="big-header">Informatics Bachelor of Science Personalized Plan of Study</h2>
-            <div style="width: 100%; text-align: center; margin-bottom: 10px">
-                Your name: <input size="40" id="name">&nbsp;&nbsp;
-                Date: <input size="20" id="date">
-            </div>
+  <head>
+    <title>Informatics Personalized Plan of Study</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon-2.ico" type="image/x-icon" />
+    <link href="css/mainstyles.css" rel="stylesheet" type="text/css" />
+    <script src="js/mainscript.js" type="text/javascript"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Kaushan+Script"
+      rel="stylesheet"
+    />
+    <script src="js/data_operations.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <h2 style="text-align: center" id="big-header">
+        Informatics Bachelor of Science - Personalized Plan of Study
+      </h2>
+      <div style="width: 100%; text-align: center; margin-bottom: 10px">
+        Your name: <input size="40" id="name" />&nbsp;&nbsp; Date:
+        <input size="20" id="date" />
+      </div>
 
-            <!-- degree map -->
-            <div class="section group page-break" id="map">
-                <div class="col span_1_of_4">
-                    <header id="small-header">First Year</header>
-                    <div class="semester-header">Fall</div>
-                    <div class="semester" id="first-fall" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
-                    <div class="semester-header">Spring</div>
-                    <div class="semester" id="first-spring" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
-                    <div class="semester-header">Summer</div>
-                    <div class="semester" id="first-summer" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
-                </div>
-                <div class="col span_1_of_4">
-                    <header id="small-header">Second Year</header>
-                    <div class="semester-header">Fall</div>
-                    <div class="semester" id="second-fall" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
-                    <div class="semester-header">Spring</div>
-                    <div class="semester" id="second-spring" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
-                    <div class="semester-header">Summer</div>
-                    <div class="semester" id="second-summer" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
-                </div>
-                <div class="col span_1_of_4">
-                    <header id="small-header">Third Year</header>
-                    <div class="semester-header">Fall</div>
-                    <div class="semester" id="third-fall" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
-                    <div class="semester-header">Spring</div>
-                    <div class="semester" id="third-spring" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
-                    <div class="semester-header">Summer</div>
-                    <div class="semester" id="third-summer" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
-                </div>
-                <div class="col span_1_of_4">
-                    <header id="small-header">Fourth Year</header>
-                    <div class="semester-header">Fall</div>
-                    <div class="semester" id="fourth-fall" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
-                    <div class="semester-header">Spring</div>
-                    <div class="semester" id="fourth-spring" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
-                    <div class="semester-header">Summer</div>
-                    <div class="semester" id="fourth-summer" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
-                </div>
-            </div>
-
-            <!-- list of required courses -->
-            <h3 id="med-header">Required Courses and Credit Hours</h3>
-            <div id="course-list" class="page-break">
-                <div class="course-group-header corea-header" id="corea-header">
-                    Required Core A and Career Planning (53 credit hours)
-                </div>
-                <div class="course-group" id="corea" ondragover="allowDrop(event)" ondrop="drop(event)">
-                    <div class="course" id="corea-I100" draggable="true" 
-                         ondragstart="drag(event)">
-                        <div class="corea-header">I100</div>
-                        First-Year Experience (1hr)
-                    </div>
-                    <div class="course" id="corea-I101" draggable="true" ondragstart="drag(event)">
-                        <div class="corea-header">I101</div>
-                        Introduction to Informatics (4hrs)
-                    </div>
-                    <div class="course" id="corea-I201" draggable="true" ondragstart="drag(event)">
-                        <div class="corea-header">I201</div>
-                        Mathematical Foundation of Informatics (4hrs)
-                    </div>
-                    <div class="course" id="corea-I202" draggable="true" ondragstart="drag(event)">
-                        <div class="corea-header">I202</div>
-                        Social Informatics (3hrs)
-                    </div>
-                    <div class="course" id="corea-I210" draggable="true" ondragstart="drag(event)">
-                        <div class="corea-header">I210</div>
-                        Information Infrastructure I (4hrs)
-                    </div>
-                    <div class="course" id="corea-I211" draggable="true" ondragstart="drag(event)">
-                        <div class="corea-header">I211</div>
-                        Information Infrastructure II (4hrs)
-                    </div>
-                    <div class="course" id="corea-I223" draggable="true" ondragstart="drag(event)">
-                        <div class="corea-header">I223</div>
-                        Data Fluency (3hrs)
-                    </div>
-                    <div class="course" id="corea-I270" draggable="true" ondragstart="drag(event)">
-                        <div class="corea-header">I270</div>
-                        Introduction to Human-Computer Interaction (3hrs)
-                    </div>
-                    <div class="course" id="corea-I303" draggable="true" ondragstart="drag(event)">
-                        <div class="corea-header">I303</div>
-                        Organizational Informatics (3hrs)
-                    </div>
-                    <div class="course" id="corea-I305" draggable="true" ondragstart="drag(event)">
-                        <div class="corea-header">I305</div>
-                        Introduction to Research In Informatics (3hrs)
-                    </div>
-                    <div class="course" id="corea-I308" draggable="true" ondragstart="drag(event)">
-                        <div class="corea-header">I308</div>
-                        Information Representation (3hrs)
-                    </div>
-                    <div class="course" id="corea-I402" draggable="true" ondragstart="drag(event)">
-                        <div class="corea-header">I402</div>
-                        Project Management (3hrs)
-                    </div>
-                    <div class="course" id="corea-I421" draggable="true" ondragstart="drag(event)">
-                        <div class="corea-header">I421</div>
-                        Application of Data Mining (3hrs)
-                    </div>
-                    <div class="course" id="corea-I425" draggable="true" ondragstart="drag(event)">
-                        <div class="corea-header">I425</div>
-                        Web Services in Information Systems (3hrs)
-                    </div>
-                    <div class="course" id="corea-I453" draggable="true" ondragstart="drag(event)">
-                        <div class="corea-header">I453</div>
-                        Computer and Information Ethics (3hrs)
-                    </div>
-                    <div class="course" id="corea-B302" draggable="true" ondragstart="drag(event)">
-                        <div class="corea-header">PBHL B302</div>
-                        Biostatistics for Informatics (3hr)
-                    </div>
-                    <div class="course" id="corea-N220" draggable="true" ondragstart="drag(event)">
-                        <div class="corea-header">NEWM N220</div>
-                        Intro to Media Application Dev (3hrs)
-                    </div>
-                    <div class="course" id="corea-N299" draggable="true" ondragstart="drag(event)">
-                        <div class="corea-header">NEWM N299</div>
-                        Career Planning (2hrs)
-                    </div>
-                </div>
-                
-                <div  class="course-group-header coreb-header" id="coreb-header">Required Core B (two 300 level or higher INFO or NEWM courses, 6 credit hours):
-                    <img src="img/plus.png" class='add-course' onclick="addCourse(event)" alt="Add Course" title="Add Course">
-                </div>
-                <div class="course-group" id="coreb" ondrop="drop(event)" ondragover="allowDrop(event)">
-                    <div class="course" id="coreb-1" draggable="true" ondragstart="drag(event)">
-                        <input type="text" class="coreb-header" placeholder="Course title">
-                        <textarea placeholder="Type course name" maxlength="45"></textarea>
-                    </div>
-                </div>
-                <div  class="course-group-header capstone-header" id="capstone-header">Capstone (3 credit hours): </div>
-                <div class="course-group" id="capstone" ondrop="drop(event)" ondragover="allowDrop(event)">
-                    <div class="course" id="capstone-I491" draggable="true" ondragstart="drag(event)">
-                        <div class="capstone-header">I491</div>
-                        Capstone Project Internship(3hrs)
-                    </div>
-                    <div class="course" id="capstone-I492" draggable="true" ondragstart="drag(event)">
-                        <div class="capstone-header">I492</div>
-                        Senior Thesis (3hrs)
-                    </div>
-                    <div class="course" id="capstone-I494" draggable="true" ondragstart="drag(event)">
-                        <div class="capstone-header">I494</div>
-                        Design &#38; Development of Info Sys (3hrs)
-                    </div>
-                </div>
-                <div  class="course-group-header spec-header" id="spec-header">Area of Specialization (12-21 credit hours):
-                    <img src="img/plus.png" class='add-course' onclick="addCourse(event)" alt="Add Course" title="Add Course">
-                </div>
-                <div class="course-group" id="spec" ondrop="drop(event)" ondragover="allowDrop(event)">
-                    <div class="course" id="spec-1" draggable="true" ondragstart="drag(event)">
-                        <input type="text" class="spec-header" placeholder="Course title">
-                        <textarea placeholder="Type course name" maxlength="45"></textarea>
-                    </div>
-                </div>
-                <div  class="course-group-header gedu-header" id="gedu-header">General Education (14 credit hours):
-                    <img src="img/plus.png" class='add-course' onclick="addCourse(event)" alt="Add Course" title="Add Course">
-                </div>
-                <div class="course-group" id='gedu' ondrop="drop(event)" ondragover="allowDrop(event)">
-                    <div class="course" id="gedu-1" draggable="true" ondragstart="drag(event)">
-                        <input type="text" class="gedu-header" placeholder="course title">
-                        <textarea placeholder="Type course name" maxlength="45"></textarea>
-                    </div>
-                </div>
-                
-            </div>
-
-            <!-- action buttons -->
-            <br><br>
-            <div style="text-align: center">
-                <button onclick="saveplan()">Save</button>
-                <button onclick="resetplan()">Reset</button>
-                <button onclick="printplan()">Print</button>
-            </div>
-            <br><br><br>
-            
+      <!-- degree map -->
+      <div class="section group page-break" id="map">
+        <div class="col span_1_of_4">
+          <header id="small-header">First Year</header>
+          <div class="semester-header">Fall</div>
+          <div
+            class="semester"
+            id="first-fall"
+            ondragover="allowDrop(event)"
+            ondrop="drop(event)"
+          ></div>
+          <div class="semester-header">Spring</div>
+          <div
+            class="semester"
+            id="first-spring"
+            ondragover="allowDrop(event)"
+            ondrop="drop(event)"
+          ></div>
+          <div class="semester-header">Summer</div>
+          <div
+            class="semester"
+            id="first-summer"
+            ondragover="allowDrop(event)"
+            ondrop="drop(event)"
+          ></div>
         </div>
-    </body>
+        <div class="col span_1_of_4">
+          <header id="small-header">Second Year</header>
+          <div class="semester-header">Fall</div>
+          <div
+            class="semester"
+            id="second-fall"
+            ondragover="allowDrop(event)"
+            ondrop="drop(event)"
+          ></div>
+          <div class="semester-header">Spring</div>
+          <div
+            class="semester"
+            id="second-spring"
+            ondragover="allowDrop(event)"
+            ondrop="drop(event)"
+          ></div>
+          <div class="semester-header">Summer</div>
+          <div
+            class="semester"
+            id="second-summer"
+            ondragover="allowDrop(event)"
+            ondrop="drop(event)"
+          ></div>
+        </div>
+        <div class="col span_1_of_4">
+          <header id="small-header">Third Year</header>
+          <div class="semester-header">Fall</div>
+          <div
+            class="semester"
+            id="third-fall"
+            ondragover="allowDrop(event)"
+            ondrop="drop(event)"
+          ></div>
+          <div class="semester-header">Spring</div>
+          <div
+            class="semester"
+            id="third-spring"
+            ondragover="allowDrop(event)"
+            ondrop="drop(event)"
+          ></div>
+          <div class="semester-header">Summer</div>
+          <div
+            class="semester"
+            id="third-summer"
+            ondragover="allowDrop(event)"
+            ondrop="drop(event)"
+          ></div>
+        </div>
+        <div class="col span_1_of_4">
+          <header id="small-header">Fourth Year</header>
+          <div class="semester-header">Fall</div>
+          <div
+            class="semester"
+            id="fourth-fall"
+            ondragover="allowDrop(event)"
+            ondrop="drop(event)"
+          ></div>
+          <div class="semester-header">Spring</div>
+          <div
+            class="semester"
+            id="fourth-spring"
+            ondragover="allowDrop(event)"
+            ondrop="drop(event)"
+          ></div>
+          <div class="semester-header">Summer</div>
+          <div
+            class="semester"
+            id="fourth-summer"
+            ondragover="allowDrop(event)"
+            ondrop="drop(event)"
+          ></div>
+        </div>
+      </div>
+
+      <!-- list of required courses -->
+      <h3 id="med-header">Required Courses and Credit Hours</h3>
+      <div id="course-list" class="page-break">
+        <div class="course-group-header corea-header" id="corea-header">
+          Required Core A and Career Planning (53 credit hours)
+        </div>
+        <div
+          class="course-group"
+          id="corea"
+          ondragover="allowDrop(event)"
+          ondrop="drop(event)"
+        >
+          <div
+            class="course"
+            id="corea-I100"
+            draggable="true"
+            ondragstart="drag(event)"
+          >
+            <div class="corea-header">I100</div>
+            First-Year Experience (1hr)
+          </div>
+          <div
+            class="course"
+            id="corea-I101"
+            draggable="true"
+            ondragstart="drag(event)"
+          >
+            <div class="corea-header">I101</div>
+            Introduction to Informatics (4hrs)
+          </div>
+          <div
+            class="course"
+            id="corea-I201"
+            draggable="true"
+            ondragstart="drag(event)"
+          >
+            <div class="corea-header">I201</div>
+            Mathematical Foundation of Informatics (4hrs)
+          </div>
+          <div
+            class="course"
+            id="corea-I202"
+            draggable="true"
+            ondragstart="drag(event)"
+          >
+            <div class="corea-header">I202</div>
+            Social Informatics (3hrs)
+          </div>
+          <div
+            class="course"
+            id="corea-I210"
+            draggable="true"
+            ondragstart="drag(event)"
+          >
+            <div class="corea-header">I210</div>
+            Information Infrastructure I (4hrs)
+          </div>
+          <div
+            class="course"
+            id="corea-I211"
+            draggable="true"
+            ondragstart="drag(event)"
+          >
+            <div class="corea-header">I211</div>
+            Information Infrastructure II (4hrs)
+          </div>
+          <div
+            class="course"
+            id="corea-I223"
+            draggable="true"
+            ondragstart="drag(event)"
+          >
+            <div class="corea-header">I223</div>
+            Data Fluency (3hrs)
+          </div>
+          <div
+            class="course"
+            id="corea-I270"
+            draggable="true"
+            ondragstart="drag(event)"
+          >
+            <div class="corea-header">I270</div>
+            Introduction to Human-Computer Interaction (3hrs)
+          </div>
+          <div
+            class="course"
+            id="corea-I303"
+            draggable="true"
+            ondragstart="drag(event)"
+          >
+            <div class="corea-header">I303</div>
+            Organizational Informatics (3hrs)
+          </div>
+          <div
+            class="course"
+            id="corea-I305"
+            draggable="true"
+            ondragstart="drag(event)"
+          >
+            <div class="corea-header">I305</div>
+            Introduction to Research In Informatics (3hrs)
+          </div>
+          <div
+            class="course"
+            id="corea-I308"
+            draggable="true"
+            ondragstart="drag(event)"
+          >
+            <div class="corea-header">I308</div>
+            Information Representation (3hrs)
+          </div>
+          <div
+            class="course"
+            id="corea-I402"
+            draggable="true"
+            ondragstart="drag(event)"
+          >
+            <div class="corea-header">I402</div>
+            Project Management (3hrs)
+          </div>
+          <div
+            class="course"
+            id="corea-I421"
+            draggable="true"
+            ondragstart="drag(event)"
+          >
+            <div class="corea-header">I421</div>
+            Application of Data Mining (3hrs)
+          </div>
+          <div
+            class="course"
+            id="corea-I425"
+            draggable="true"
+            ondragstart="drag(event)"
+          >
+            <div class="corea-header">I425</div>
+            Web Services in Information Systems (3hrs)
+          </div>
+          <div
+            class="course"
+            id="corea-I453"
+            draggable="true"
+            ondragstart="drag(event)"
+          >
+            <div class="corea-header">I453</div>
+            Computer and Information Ethics (3hrs)
+          </div>
+          <div
+            class="course"
+            id="corea-B302"
+            draggable="true"
+            ondragstart="drag(event)"
+          >
+            <div class="corea-header">PBHL B302</div>
+            Biostatistics for Informatics (3hr)
+          </div>
+          <div
+            class="course"
+            id="corea-N220"
+            draggable="true"
+            ondragstart="drag(event)"
+          >
+            <div class="corea-header">NEWM N220</div>
+            Intro to Media Application Dev (3hrs)
+          </div>
+          <div
+            class="course"
+            id="corea-N299"
+            draggable="true"
+            ondragstart="drag(event)"
+          >
+            <div class="corea-header">NEWM N299</div>
+            Career Planning (2hrs)
+          </div>
+        </div>
+
+        <div class="course-group-header coreb-header" id="coreb-header">
+          Required Core B (two 300 level or higher INFO or NEWM courses, 6
+          credit hours):
+          <img
+            src="img/plus.png"
+            class="add-course"
+            onclick="addCourse(event)"
+            alt="Add Course"
+            title="Add Course"
+          />
+        </div>
+        <div
+          class="course-group"
+          id="coreb"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+        >
+          <div
+            class="course"
+            id="coreb-1"
+            draggable="true"
+            ondragstart="drag(event)"
+          >
+            <input
+              type="text"
+              class="coreb-header"
+              placeholder="Course title"
+            />
+            <textarea placeholder="Type course name" maxlength="45"></textarea>
+          </div>
+        </div>
+        <div class="course-group-header capstone-header" id="capstone-header">
+          Capstone (3 credit hours):
+        </div>
+        <div
+          class="course-group"
+          id="capstone"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+        >
+          <div
+            class="course"
+            id="capstone-I491"
+            draggable="true"
+            ondragstart="drag(event)"
+          >
+            <div class="capstone-header">I491</div>
+            Capstone Project Internship(3hrs)
+          </div>
+          <div
+            class="course"
+            id="capstone-I492"
+            draggable="true"
+            ondragstart="drag(event)"
+          >
+            <div class="capstone-header">I492</div>
+            Senior Thesis (3hrs)
+          </div>
+          <div
+            class="course"
+            id="capstone-I494"
+            draggable="true"
+            ondragstart="drag(event)"
+          >
+            <div class="capstone-header">I494</div>
+            Design &#38; Development of Info Sys (3hrs)
+          </div>
+        </div>
+        <div class="course-group-header spec-header" id="spec-header">
+          Area of Specialization (12-21 credit hours):
+          <img
+            src="img/plus.png"
+            class="add-course"
+            onclick="addCourse(event)"
+            alt="Add Course"
+            title="Add Course"
+          />
+        </div>
+        <div
+          class="course-group"
+          id="spec"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+        >
+          <div
+            class="course"
+            id="spec-1"
+            draggable="true"
+            ondragstart="drag(event)"
+          >
+            <input type="text" class="spec-header" placeholder="Course title" />
+            <textarea placeholder="Type course name" maxlength="45"></textarea>
+          </div>
+        </div>
+        <div class="course-group-header gedu-header" id="gedu-header">
+          General Education (14 credit hours):
+          <img
+            src="img/plus.png"
+            class="add-course"
+            onclick="addCourse(event)"
+            alt="Add Course"
+            title="Add Course"
+          />
+        </div>
+        <div
+          class="course-group"
+          id="gedu"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+        >
+          <div
+            class="course"
+            id="gedu-1"
+            draggable="true"
+            ondragstart="drag(event)"
+          >
+            <input type="text" class="gedu-header" placeholder="course title" />
+            <textarea placeholder="Type course name" maxlength="45"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- action buttons -->
+      <br /><br />
+      <div style="text-align: center">
+        <button onclick="saveplan()">Save</button>
+        <button onclick="resetplan()">Reset</button>
+        <button onclick="printplan()">Print</button>
+      </div>
+      <br /><br /><br />
+    </div>
+  </body>
 </html>
