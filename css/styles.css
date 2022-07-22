@@ -641,7 +641,7 @@ nav .dropdown {
   }
 }
 /* styling for all design project details pages */
-.work {
+.details {
   width: 90%;
   max-width: 1500px;
   display: flex;
@@ -655,53 +655,53 @@ nav .dropdown {
   text-align: center;
   padding: 70px;
 }
-.work .top {
+.details .top {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   width: 100%;
 }
-.work .top a {
+.details .top a {
   width: 20%;
   margin: 0 auto;
   color: #19181a;
   text-decoration: none;
   cursor: pointer;
 }
-.work .top h2 {
+.details .top h2 {
   width: 60%;
   margin: 0 auto;
   text-align: center;
 }
-.work .top p {
+.details .top p {
   width: 70%;
   margin: 0 auto;
   padding: 30px;
   line-height: 35px;
 }
-.work .bottom {
+.details .bottom {
   margin: 0 auto;
   width: 100%;
 }
-.work .bottom img {
+.details .bottom img {
   width: 60%;
   height: auto;
   margin-top: 60px;
 }
-.work .bottom p {
+.details .bottom p {
   padding: 0;
   text-align: center;
   font-size: 16px;
   text-transform: uppercase;
 }
-.work .bottom h4 {
+.details .bottom h4 {
   margin: 75px auto 0 auto;
   text-decoration: underline;
 }
-.work .bottom hr {
+.details .bottom hr {
   margin-top: 75px;
 }
-.work button {
+.details button {
   margin-top: 60px;
 }
 
@@ -735,20 +735,20 @@ nav .dropdown {
   }
 }
 /* styling for the websites page and design page */
-.design {
+.gallery {
   width: 90%;
   max-width: 1500px;
   margin: 40px auto auto auto;
   display: flex;
   flex-direction: column;
 }
-.design .dock {
+.gallery .dock {
   width: 100%;
   margin: 0 auto;
   padding-top: 90px;
   text-align: center;
 }
-.design .dock #selected {
+.gallery .dock #selected {
   display: flex;
   flex-direction: row;
   text-align: left;
@@ -756,27 +756,27 @@ nav .dropdown {
   padding: 40px 0;
   width: 100%;
 }
-.design .dock #selected img {
+.gallery .dock #selected img {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.4);
   border: #0068bd solid 2px;
   border-radius: 15px;
   width: 30%;
   height: auto;
 }
-.design .dock #selected .info {
+.gallery .dock #selected .info {
   float: right;
   width: 60%;
 }
-.design .dock #selected .info p {
+.gallery .dock #selected .info p {
   font-size: 18px;
   line-height: 25px;
 }
-.design .gallery {
+.gallery .wall {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.design .gallery .gallery-col {
+.gallery .wall .gallery-col {
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -795,7 +795,7 @@ nav .dropdown {
     cursor: pointer;
   } */
 }
-.design .gallery .gallery-col .container {
+.gallery .wall .gallery-col .container {
   position: relative;
   margin-top: 70px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.4);
@@ -828,7 +828,7 @@ nav .dropdown {
     text-align: center;
   } */
 }
-.design .gallery .gallery-col .container img {
+.gallery .wall .gallery-col .container img {
   width: 100%;
   height: auto;
   margin: auto;
@@ -836,30 +836,30 @@ nav .dropdown {
   border-radius: 13px;
   cursor: pointer;
 }
-.design .gallery .gallery-col .container:hover {
+.gallery .wall .gallery-col .container:hover {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
 }
 
 @media only screen and (max-width: 980px) {
-  .design {
+  .gallery {
     flex-direction: column;
     margin: 70px auto auto auto;
   }
-  .design .dock #selected {
+  .gallery .dock #selected {
     flex-direction: column;
   }
-  .design .dock #selected img,
-.design .dock #selected .info {
+  .gallery .dock #selected img,
+.gallery .dock #selected .info {
     width: 90%;
     margin: 0 auto;
   }
-  .design .dock #selected .info {
+  .gallery .dock #selected .info {
     padding-top: 50px;
   }
-  .design .gallery {
+  .gallery .wall {
     flex-direction: column;
   }
-  .design .gallery .gallery-col {
+  .gallery .wall .gallery-col {
     width: 75%;
     margin: auto;
     /* .container {

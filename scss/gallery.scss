@@ -1,5 +1,5 @@
 /* styling for the websites page and design page */
-.design {
+.gallery {
   width: 90%;
   max-width: 1500px;
   margin: 40px auto auto auto;
@@ -40,7 +40,7 @@
     }
   }
 
-  .gallery {
+  .wall {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -117,7 +117,7 @@
 }
 
 @media only screen and (max-width: 980px) {
-  .design {
+  .gallery {
     flex-direction: column;
     margin: 70px auto auto auto;
 
@@ -137,7 +137,7 @@
       }
     }
 
-    .gallery {
+    .wall {
       flex-direction: column;
 
       .gallery-col {
