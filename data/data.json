@@ -30,7 +30,7 @@
       "title": "WeatherU Application",
       "sub": "Weather API Interface, 2022",
       "desc": "An original weather application design that shows various data points including average temperature, humidity, and total precipitation. WeatherU implements a RESTful backend API for storing and retrieving data via AJAX calls. All the weather and location data is collected from weatherapi.com. This application includes a simple search bar and was developed using JavaScript, JQuery, and SCSS. It is also fully responsive.",
-      "link": "https://in-info-web4.informatics.iupui.edu/~jtadrous/N423/homework-two/"
+      "link": "https://jtadrous.github.io/n423fall2021/homework-two/index.html"
     },
     {
       "id": "5",
@@ -38,7 +38,7 @@
       "title": "Travel Fly Website",
       "sub": "MVC Web Application, 2021",
       "desc": "A fully-functioning website for travel information and booking called Travel Fly. This single-page application was developed using the MVC model and implemented HTML, CSS, JavaScript, and JQuery. The design files for this website were provided by my professor and I was tasked with re-creating those designs by programming a new website and applying common web development practices. This website is also fully responsive.",
-      "link": "https://in-info-web4.informatics.iupui.edu/~jtadrous/N215/homework-ten/"
+      "link": "https://jtadrous.github.io/n215spring2021/homework-ten/index.html"
     },
     {
       "id": "6",
@@ -46,7 +46,7 @@
       "title": "Capture Collective Website",
       "sub": "MVC Web Application, 2021",
       "desc": "An original website design for a fictional photography company called Capture Collective. This single-page application was developed using the MVC model and implemented HTML, CSS, and basic JavaScript. It features various text, imagery, and inputs.",
-      "link": "https://in-info-web4.informatics.iupui.edu/~jtadrous/N315/homework-two/"
+      "link": "https://jtadrous.github.io/n315fall2021/homework-two/index.html"
     },
     {
       "id": "7",
